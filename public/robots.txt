@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://poikatsu-press.com/sitemap.xml

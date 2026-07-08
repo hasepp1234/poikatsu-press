@@ -1,0 +1,11 @@
+/* 最小スタイル雛形。本実装で拡張 */
+:root{--fg:#1a1a1a;--muted:#666;--accent:#c8102e;--bg:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN",sans-serif;color:var(--fg);background:var(--bg);line-height:1.7}
+.site-header{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;padding:.8rem 1rem;border-bottom:1px solid #eee}
+.brand{font-weight:800;color:var(--accent);text-decoration:none;font-size:1.2rem}
+nav a{margin-right:.8rem;text-decoration:none;color:var(--fg);font-size:.9rem}
+main{max-width:960px;margin:0 auto;padding:1rem}
+.pr-tag{background:var(--muted);color:#fff;font-size:.65rem;padding:.1rem .4rem;border-radius:3px;margin-left:.4rem;vertical-align:middle}
+.pr-note{color:var(--muted);font-size:.8rem}
+.site-footer{max-width:960px;margin:2rem auto;padding:1rem;border-top:1px solid #eee;color:var(--muted);font-size:.85rem}
+.meta{color:var(--muted);font-size:.85rem}

@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "sample-card",
+    "name": "（サンプル）○○カード",
+    "issuer": "○○カード株式会社",
+    "brand": "Visa",
+    "campaign_points": "最大10,000円相当",
+    "campaign_conditions": "入会＋3万円利用（※公式で要裏取り）",
+    "annual_fee": "永年無料",
+    "base_return_rate": "1.0%",
+    "category": "credit-card",
+    "affiliate_url": "",
+    "updated": "2026-07-08"
+  }
+]

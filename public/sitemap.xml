@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- build.py がdata/*.jsonから生成する。以下は雛形 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://poikatsu-press.com/</loc></url>
-  <url><loc>https://poikatsu-press.com/cards/</loc></url>
+  <url><loc>https://poikatsu-press.com/</loc><lastmod>2026-07-11</lastmod></url>
+  <url><loc>https://poikatsu-press.com/cards/</loc><lastmod>2026-07-11</lastmod></url>
+  <url><loc>https://poikatsu-press.com/category/kaiaku/</loc><lastmod>2026-07-11</lastmod></url>
+  <url><loc>https://poikatsu-press.com/category/campaign/</loc><lastmod>2026-07-11</lastmod></url>
+  <url><loc>https://poikatsu-press.com/category/credit-card/</loc><lastmod>2026-07-11</lastmod></url>
+  <url><loc>https://poikatsu-press.com/category/qr-pay/</loc><lastmod>2026-07-11</lastmod></url>
+  <url><loc>https://poikatsu-press.com/category/furusato/</loc><lastmod>2026-07-11</lastmod></url>
+  <url><loc>https://poikatsu-press.com/category/point-service/</loc><lastmod>2026-07-11</lastmod></url>
 </urlset>

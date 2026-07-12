@@ -33,9 +33,11 @@
 |---|---|
 | slug | ガイドのURLスラッグ |
 | title | タイトル |
-| body_md | 本文（Markdown） |
-| related_cards | 関連カードslug配列 |
-| refs | 参考一次ソース配列 |
+| body_md | 本文（改行区切りで段落化。簡易的な仕様のため見出し等のMarkdown記法は未対応） |
+| related_cards | 関連カードslug配列（cards.jsonのslugと対応。build.pyが/cards/#slugへのリンクを生成） |
+| refs | 参考情報源URL配列（個別の数値主張ではなく一般的な制度解説の裏付け用。2026-07-12追加） |
+| faq | 任意。[{q, a}, ...]形式。存在する場合はFAQPage JSON-LDになる |
+| updated | 最終更新日（2026-07-12追加。sitemapのlastmodにも反映） |
 
 ## news_raw.json … collect_news.pyの検知ログ（news.jsonの前段、2026-07-11追加）
 X投稿からの速報検知結果。status=pending_verificationのまま自動でnews.jsonへは反映されない。

@@ -192,11 +192,27 @@ def build_categories(base, tpl_category, news, urls):
         write(OUT / "category" / category / "index.html", html, urls, canonical, _today())
 
 
-def build_guides(base, tpl_guide, guides, urls):
+def _related_cards_html(related_slugs: list, cards_by_slug: dict) -> str:
+    items = []
+    for slug in related_slugs or []:
+        c = cards_by_slug.get(slug)
+        if not c:
+            continue
+        items.append(
+            f'<li><a href="/cards/#{slug}">{c.get("name","")}</a> — {c.get("campaign_points","")}</li>'
+        )
+    if not items:
+        return "<p>関連クレカ案件は準備中です。</p>"
+    return '<p>関連するクレカ発行キャンペーン:</p><ul class="related-cards-list">' + "".join(items) + "</ul>"
+
+
+def build_guides(base, tpl_guide, guides, cards, urls):
+    cards_by_slug = {c.get("slug", ""): c for c in cards}
     for g in guides:
         slug = g.get("slug", "")
         if not slug:
             continue
+        updated = g.get("updated", _today())
         breadcrumb = f'<a href="/">トップ</a> &gt; <a href="/guide/">ガイド</a> &gt; {g.get("title","")}'
 
         body_html = "".join(f"<p>{line}</p>" for line in g.get("body_md", "").splitlines() if line.strip())
@@ -223,13 +239,39 @@ def build_guides(base, tpl_guide, guides, urls):
             faq_html = ""
             jsonld = {"@context": "https://schema.org", "@type": "Article", "headline": g.get("title", "")}
 
-        content = render(tpl_guide, {"BREADCRUMB": breadcrumb, "TITLE": g.get("title", ""), "BODY": body_html})
+        content = render(tpl_guide, {
+            "BREADCRUMB": breadcrumb,
+            "TITLE": g.get("title", ""),
+            "UPDATED": updated,
+            "BODY": body_html,
+        })
         content = content.replace("<!-- {{FAQ}} LLMO対応FAQ -->", faq_html)
-        content = content.replace("<!-- {{RELATED_CARDS}} -->", "<p>関連クレカ案件は準備中です。</p>")
+        content = content.replace(
+            "<!-- {{RELATED_CARDS}} -->", _related_cards_html(g.get("related_cards", []), cards_by_slug)
+        )
 
         canonical = f"{SITE}/guide/{slug}.html"
         html = page(base, g.get("title", ""), g.get("title", ""), canonical, "article", jsonld, content)
-        write(OUT / "guide" / f"{slug}.html", html, urls, canonical, _today())
+        write(OUT / "guide" / f"{slug}.html", html, urls, canonical, updated)
+
+
+def build_guide_index(base, guides, urls):
+    items = "".join(
+        f'<li><a href="/guide/{g.get("slug","")}.html">{g.get("title","")}</a>'
+        f'<span class="meta"> 更新日: {g.get("updated","")}</span></li>'
+        for g in guides
+        if g.get("slug")
+    ) or "<li>準備中です。</li>"
+    content = (
+        '<section class="guide-index"><h1>ガイド一覧</h1>'
+        "<p>ポイ活・クレジットカード選びの基本を解説する入門・最適化ガイドです。</p>"
+        f'<ul class="guide-list">{items}</ul></section>'
+    )
+    canonical = f"{SITE}/guide/"
+    jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "ガイド一覧"}
+    html = page(base, "ガイド一覧", "ポイ活・クレジットカード選びの基本を解説するガイド記事一覧。",
+                canonical, "website", jsonld, content)
+    write(OUT / "guide" / "index.html", html, urls, canonical, _today())
 
 
 def write_sitemap(urls):
@@ -265,7 +307,8 @@ def main():
     build_news(base, tpl_news, news, urls)
     build_cards(base, tpl_cards, cards, urls)
     build_categories(base, tpl_category, news, urls)
-    build_guides(base, tpl_guide, guides, urls)
+    build_guides(base, tpl_guide, guides, cards, urls)
+    build_guide_index(base, guides, urls)
     write_sitemap(urls)
 
     print(

@@ -9,3 +9,8 @@ main{max-width:960px;margin:0 auto;padding:1rem}
 .pr-note{color:var(--muted);font-size:.8rem}
 .site-footer{max-width:960px;margin:2rem auto;padding:1rem;border-top:1px solid #eee;color:var(--muted);font-size:.85rem}
 .meta{color:var(--muted);font-size:.85rem}
+.guide-list{list-style:none;padding:0}
+.guide-list li{padding:.5rem 0;border-bottom:1px solid #eee}
+.related-cards-list{padding-left:1.2rem}
+.faq-item{margin:.8rem 0}
+.faq-item h3{font-size:1rem;margin-bottom:.2rem}

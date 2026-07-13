@@ -53,14 +53,14 @@ gtag('config', 'G-ERM7H8H978');
 <!-- TOPニュース・お得商品・改悪情報はインフルエンサー起点(source_type=influencer)かつ元ツイート投稿から
      24時間以内(source_posted_at基準)のもののみ表示。2026-07-14変更 -->
 <section class="summary">
-  <h1>ポイ活PRESS 7/13版</h1>
+  <h1>ポイ活PRESS 7/14版</h1>
   <p class="lead">ポイント改悪・新キャンペーン・高還元クレカを1ページでまとめてチェック。</p>
   
   <div class="summary-box">
     <p>現在、クレジットカード発行キャンペーンを6件掲載中です（詳細は下記「各種キャンペーン」欄）。ニュース速報・お得商品情報は準備中のため、今後随時追加していきます。</p>
     <p class="meta">更新日: 2026-07-13</p>
   </div>
-  <p class="backnumber-link"><a href="/backnumber/">バックナンバー一覧を見る →</a></p>
+  <p class="backnumber-link"><a class="cta-link" href="/backnumber/">バックナンバー一覧を見る →</a></p>
 </section>
 
 <section class="top-news">
@@ -72,7 +72,7 @@ gtag('config', 'G-ERM7H8H978');
   <h2>各種キャンペーン<span class="pr-tag">PR</span></h2>
   <div class="campaign-group">
     <h3>新キャンペーン</h3>
-    <div class="campaign-list"><div class="campaign-item"><strong><a href="/cards/#rakuten-card">楽天カード</a></strong> — 新規入会＆3回利用で5,000ポイント（常時開催）。JCBブランド選択の場合は追加で3,000ポイント、合計最大8,000ポイント（期間限定） <span class="meta">（2026-07-13時点）</span></div></div>
+    <div class="campaign-list"><div class="campaign-item campaign-item--new"><strong><a href="/cards/#rakuten-card">楽天カード</a></strong> — 新規入会＆3回利用で5,000ポイント（常時開催）。JCBブランド選択の場合は追加で3,000ポイント、合計最大8,000ポイント（期間限定） <span class="meta">（2026-07-13時点）</span></div></div>
   </div>
   <div class="campaign-group">
     <h3>進行中キャンペーン</h3>
@@ -82,7 +82,7 @@ gtag('config', 'G-ERM7H8H978');
     <h3>終了間近キャンペーン</h3>
     <div class="campaign-list"><p>該当するキャンペーンは現在ありません。</p></div>
   </div>
-  <p><a href="/cards/">クレカ比較表をすべて見る →</a></p>
+  <p><a class="cta-link" href="/cards/">クレカ比較表をすべて見る →</a></p>
 </section>
 
 <section class="deals">
@@ -94,7 +94,7 @@ gtag('config', 'G-ERM7H8H978');
 <section class="kaiaku-list">
   <h2>改悪情報（直近24時間）</h2>
   <ul id="kaiaku-items"><li>直近24時間の改悪情報はありません。</li></ul>
-  <p><a href="/category/kaiaku/">改悪情報をすべて見る →</a></p>
+  <p><a class="cta-link" href="/category/kaiaku/">改悪情報をすべて見る →</a></p>
 </section>
 
 </main>
@@ -104,5 +104,22 @@ gtag('config', 'G-ERM7H8H978');
   <p><a href="/about/">運営情報</a> ・ <a href="/contact/">お問い合わせ</a> ・ <a href="/privacy/">プライバシーポリシー</a></p>
   <small>© ポイ活PRESS</small>
 </footer>
+
+<!-- ナビの現在地ハイライト（2026-07-14追加。全ページ共通のbase.htmlはビルド時に
+     どのページかを知らないため、表示側でlocation.pathnameと突き合わせて判定する） -->
+<script>
+(function(){
+  var path = location.pathname;
+  var links = document.querySelectorAll('.site-header nav a');
+  var best = null;
+  for (var i = 0; i < links.length; i++) {
+    var href = links[i].getAttribute('href');
+    if (href && href !== '/' && path.indexOf(href) === 0) {
+      if (!best || href.length > best.getAttribute('href').length) best = links[i];
+    }
+  }
+  if (best) best.classList.add('active');
+})();
+</script>
 </body>
 </html>

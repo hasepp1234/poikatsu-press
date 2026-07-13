@@ -1,0 +1,544 @@
+[
+  {
+    "detected_id": "x_2076642897466896822",
+    "source": "x",
+    "account_handle": "Shinpoi_OTOKU",
+    "account_name": "しんぽい@お得オタク",
+    "tweet_id": "2076642897466896822",
+    "tweet_url": "https://x.com/Shinpoi_OTOKU/status/2076642897466896822",
+    "text": "年に一度の祭り！\nAmazonプライムデーも残りわずか！！\n\nお忘れなく(📞^o^)ﾄｩﾙﾙﾙﾙﾙ…",
+    "created_at": "2026-07-13T12:20:23.000Z",
+    "matched_keywords": [
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076641024244605007",
+    "source": "x",
+    "account_handle": "Shinpoi_OTOKU",
+    "account_name": "しんぽい@お得オタク",
+    "tweet_id": "2076641024244605007",
+    "tweet_url": "https://x.com/Shinpoi_OTOKU/status/2076641024244605007",
+    "text": "@0121_cocoa お🤭 プライムデーもあと3時間だ≡┏( ｀Д´)┛",
+    "created_at": "2026-07-13T12:12:56.000Z",
+    "matched_keywords": [
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076639120441639165",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2076639120441639165",
+    "tweet_url": "https://x.com/money_yossy/status/2076639120441639165",
+    "text": "あと3時間で終了！",
+    "created_at": "2026-07-13T12:05:23.000Z",
+    "matched_keywords": [
+      "終了"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076634664387874880",
+    "source": "x",
+    "account_handle": "chukenDr",
+    "account_name": "忠犬Dr@ポイ活投資家",
+    "tweet_id": "2076634664387874880",
+    "tweet_url": "https://x.com/chukenDr/status/2076634664387874880",
+    "text": "これもあと約3時間で終了。",
+    "created_at": "2026-07-13T11:47:40.000Z",
+    "matched_keywords": [
+      "終了"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076634563120668834",
+    "source": "x",
+    "account_handle": "chukenDr",
+    "account_name": "忠犬Dr@ポイ活投資家",
+    "tweet_id": "2076634563120668834",
+    "tweet_url": "https://x.com/chukenDr/status/2076634563120668834",
+    "text": "あと約3時間で終了。",
+    "created_at": "2026-07-13T11:47:16.000Z",
+    "matched_keywords": [
+      "終了"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076615246203207917",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2076615246203207917",
+    "tweet_url": "https://x.com/chibiusachi/status/2076615246203207917",
+    "text": "ミネラルウォーター1本あたり39円！\n天然水500ml×24本が5%引きで1215円に269ポイント還元で実質946円！\n1本あたり39円！！\n\nby Amazon 天然水 ラベルレス 500ml ×24本 富士山の天然水 バナジウム含有 ad\nhttps://t.co/6L1XS8nu4D",
+    "created_at": "2026-07-13T10:30:30.000Z",
+    "matched_keywords": [
+      "ポイント還元"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076611930572419194",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2076611930572419194",
+    "tweet_url": "https://x.com/chibiusachi/status/2076611930572419194",
+    "text": "Amazonプライムデー最終日！腸活セットもAmazonプライムデーで安くなっているのでお忘れなく👇🏻👇🏻 https://t.co/t3l4gI4oYv",
+    "created_at": "2026-07-13T10:17:20.000Z",
+    "matched_keywords": [
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076611224507425099",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2076611224507425099",
+    "tweet_url": "https://x.com/chibiusachi/status/2076611224507425099",
+    "text": "Amazonプライムデーセール最終日👇🏻\n毎朝スムージーに入れてるMCTオイルも購入！！\n\n200g\n34%オフ 1382円👇🏻\nhttps://t.co/EyzWwblZmJ\n\n90g\n38%オフ 670円👇🏻\nhttps://t.co/tASvxtoOa0\n\n日清オイリオ 日清MCTオイル ad",
+    "created_at": "2026-07-13T10:14:32.000Z",
+    "matched_keywords": [
+      "セール",
+      "オフ",
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076607572379881763",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2076607572379881763",
+    "tweet_url": "https://x.com/money_yossy/status/2076607572379881763",
+    "text": "【Amazonプライムデー】#PR\n令和８年産、新米予約、無洗米追加！\n\n■新米予約、【無洗米】 秋田県産 あきたこまち 2,552円/5kg(10/15以降)\nhttps://t.co/GHQLs5k2Z7\n・20kgで2,700円/5kgも安いです\nhttps://t.co/cVbYaujOFA\n\n通常米はこちら。\n\n■新米予約、秋田県産 あきたこまち https://t.co/PGfM3zZwGd",
+    "created_at": "2026-07-13T10:00:01.000Z",
+    "matched_keywords": [
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076603772856594832",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2076603772856594832",
+    "tweet_url": "https://x.com/chibiusachi/status/2076603772856594832",
+    "text": "@muukootoku もうキャンペーン終わってるよ！",
+    "created_at": "2026-07-13T09:44:55.000Z",
+    "matched_keywords": [
+      "キャンペーン"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076599605400395972",
+    "source": "x",
+    "account_handle": "haiji_doctor",
+    "account_name": "ハイジ博士@ポイ活！キャッシュレス決済＆お得節約情報",
+    "tweet_id": "2076599605400395972",
+    "tweet_url": "https://x.com/haiji_doctor/status/2076599605400395972",
+    "text": "続き\n\n①キャンペーンスケジュール(画質悪い場合は保存推奨)\n②還元一覧表\n③スケジュール分割版1\n④スケジュール分割版2\n\n⇩キャンペーン公式サイトへのリンク集はブログにまとめてます。各エントリーなどにお役立てください💁\nhttps://t.co/i26brwkUNL https://t.co/PotSNIi3Tc",
+    "created_at": "2026-07-13T09:28:21.000Z",
+    "matched_keywords": [
+      "キャンペーン"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076597438098592022",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2076597438098592022",
+    "tweet_url": "https://x.com/chibiusachi/status/2076597438098592022",
+    "text": "Amazonプライムデー最終日、最近話題のクレアチンも安くなってるのでお忘れなく👇🏻\nhttps://t.co/BpWfxp6dVG\n\nREYS レイズがたぶん最安、1kg1980円👇🏻\nhttps://t.co/dhZ2JDONLc\n\nハルクファクター👇🏻\nhttps://t.co/8Rt0qTcKqY\n\nビーレジェンド👇🏻\nhttps://t.co/6Tn4G8RG4O\n\nPR https://t.co/M2Uggo8DnE https://t.co/CbDbGIFQ1F",
+    "created_at": "2026-07-13T09:19:45.000Z",
+    "matched_keywords": [
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076594486705373283",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2076594486705373283",
+    "tweet_url": "https://x.com/chibiusachi/status/2076594486705373283",
+    "text": "Amazon haulの70%割引キャンペーンも本日までです🙆🙆\n6000円分カゴに入れたら1700円くらいに割引されます安すぎます👇👇\nhttps://t.co/O14oR4k26F\n\nドライバーセット👇🏻\nhttps://t.co/Bas0sLh56D\n有線イヤホン👇🏻\nhttps://t.co/QpOHRq2U0X\n袋👇🏻\nhttps://t.co/o80Xq0QtEE\nhttps://t.co/blSimvc0n3\nPR https://t.co/zttIyt1XwY https://t.co/cjXoGQlfAd",
+    "created_at": "2026-07-13T09:08:01.000Z",
+    "matched_keywords": [
+      "キャンペーン",
+      "割引"
+    ],
+    "candidate_type": [
+      "news",
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076592403180634195",
+    "source": "x",
+    "account_handle": "chukenDr",
+    "account_name": "忠犬Dr@ポイ活投資家",
+    "tweet_id": "2076592403180634195",
+    "tweet_url": "https://x.com/chukenDr/status/2076592403180634195",
+    "text": "早め！！\n天然水、39円！！　　　ad\n\n天然水 ラベルレス 500ml ×24本、セールに269p還元で24本946円相当で1本約39円。\n\nhttps://t.co/nVA7QJWY0T",
+    "created_at": "2026-07-13T08:59:44.000Z",
+    "matched_keywords": [
+      "セール"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076591040488948147",
+    "source": "x",
+    "account_handle": "chukenDr",
+    "account_name": "忠犬Dr@ポイ活投資家",
+    "tweet_id": "2076591040488948147",
+    "tweet_url": "https://x.com/chukenDr/status/2076591040488948147",
+    "text": "知育アイテムそろえたい方は、プライムデーの今日中にどうぞ。",
+    "created_at": "2026-07-13T08:54:19.000Z",
+    "matched_keywords": [
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076590368179531944",
+    "source": "x",
+    "account_handle": "tomor1nn",
+    "account_name": "ともりPay",
+    "tweet_id": "2076590368179531944",
+    "tweet_url": "https://x.com/tomor1nn/status/2076590368179531944",
+    "text": "Amazonプライムセールは本日23:59まで！！買い忘れないか要確認！！ PR\n\nセールスTOP100\nhttps://t.co/xkZhDonXKZ\n\nAmazon haulが6,000円以上購入で70%OFF\nhttps://t.co/LwSrf9b3zu\n\nあきたこまち30kg 12,780円\nhttps://t.co/qtg2C8dFbu\n\nMeta Quest 3S（128GB）15%OFFの50,490円 https://t.co/RJUt0q7e0Q",
+    "created_at": "2026-07-13T08:51:39.000Z",
+    "matched_keywords": [
+      "セール"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076589373165113559",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2076589373165113559",
+    "tweet_url": "https://x.com/money_yossy/status/2076589373165113559",
+    "text": "【Amazonプライムデー】#PR\n[機能性表示食品] 伊藤園 ラベルレス おーいお茶 濃い茶 460ml 55%OFFで63円/本(定期便60円/本)\nhttps://t.co/TmV5y5J3yZ\n[機能性表示食品] でこの価格は、安い(^^)/ https://t.co/cBm7FlwsHS",
+    "created_at": "2026-07-13T08:47:42.000Z",
+    "matched_keywords": [
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076588669541253210",
+    "source": "x",
+    "account_handle": "tanaka100p",
+    "account_name": "ash@",
+    "tweet_id": "2076588669541253210",
+    "tweet_url": "https://x.com/tanaka100p/status/2076588669541253210",
+    "text": "じぶん銀行\nATMの出金限度額変更のお知らせ\n\nそんなに出金することないですが9/12￼までに引き上げておいたらその後も200万で行けそうなので上げておきました💪\n\n詳細\nhttps://t.co/Iuz6cdZtQe\n変更はここから\nhttps://t.co/9G6uF7EKU3 https://t.co/9d6bqF5Zrt",
+    "created_at": "2026-07-13T08:44:54.000Z",
+    "matched_keywords": [
+      "変更"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076587539407032419",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2076587539407032419",
+    "tweet_url": "https://x.com/chibiusachi/status/2076587539407032419",
+    "text": "Amazonプライムデー最終日！ Fire TV Stick 4K selctのまとめ買い追加1000円割引！\nhttps://t.co/d0acXNdAdX\n既に-40% 3200円引き ￥4,780になっているFire TV Stick 4K Select\nこれを2個買い物カゴに入れるとさらに追加1000円割引！1個当たり4280円の爆安になるよ！PR",
+    "created_at": "2026-07-13T08:40:25.000Z",
+    "matched_keywords": [
+      "割引",
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076577368752504974",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2076577368752504974",
+    "tweet_url": "https://x.com/money_yossy/status/2076577368752504974",
+    "text": "#Amazonプライムデー #PR\n\nフンドーキン あまくておいしいごまドレッシング41%OFFで191円/本(定期便172円/本)\nhttps://t.co/u6TJEM7t0h\n-",
+    "created_at": "2026-07-13T08:00:00.000Z",
+    "matched_keywords": [
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076571831243505689",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2076571831243505689",
+    "tweet_url": "https://x.com/chibiusachi/status/2076571831243505689",
+    "text": "十六茶のほうも在庫復活してる。\nAmazonプライムデーは本日まで⏰⏰\n十六茶 アサヒ飲料 ラベルレスボトル 630ml×24本 [お茶] [ノンカフェイン]PR\nhttps://t.co/z3KB9tykTH",
+    "created_at": "2026-07-13T07:38:00.000Z",
+    "matched_keywords": [
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076571366376308862",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2076571366376308862",
+    "tweet_url": "https://x.com/chibiusachi/status/2076571366376308862",
+    "text": "1本35円で買える十六茶麦茶 在庫復活してるよー！660ml×24本が858円、1あたり35円の激安になる。\n✅500円引きクーポン入力(Xで検索するとあるよ🤫)\n✅定期便設定でさらに割引\nhttps://t.co/1PH9VEeXNG\n合計858円で買える！！PR https://t.co/cJzm5ZmcHw",
+    "created_at": "2026-07-13T07:36:09.000Z",
+    "matched_keywords": [
+      "クーポン",
+      "割引"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076567803830968643",
+    "source": "x",
+    "account_handle": "chukenDr",
+    "account_name": "忠犬Dr@ポイ活投資家",
+    "tweet_id": "2076567803830968643",
+    "tweet_url": "https://x.com/chukenDr/status/2076567803830968643",
+    "text": "アクエリアス、73円　　ad\n\nセールに定期便併用で24本が1756円で1本約73円。\n\nhttps://t.co/5YB0TZ3SYI",
+    "created_at": "2026-07-13T07:21:59.000Z",
+    "matched_keywords": [
+      "セール"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076567478155788432",
+    "source": "x",
+    "account_handle": "chukenDr",
+    "account_name": "忠犬Dr@ポイ活投資家",
+    "tweet_id": "2076567478155788432",
+    "tweet_url": "https://x.com/chukenDr/status/2076567478155788432",
+    "text": "今日で終了！！\nAmazon電子書籍、3カ月無料！！　　ad\n\n電子書籍サブスクのkindle unlimited、対象なら3カ月無料　のやつは今日まで\n\n①登録\nhttps://t.co/R3w56MqSZs\n②自動更新停止\nhttps://t.co/qlRhGcOUpG\n\nで課金リスクなしで3カ月無料で読み放題。\nチェックお忘れなく！！",
+    "created_at": "2026-07-13T07:20:42.000Z",
+    "matched_keywords": [
+      "終了"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076562270847410624",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2076562270847410624",
+    "tweet_url": "https://x.com/money_yossy/status/2076562270847410624",
+    "text": "#Amazonプライムデー #PR\n\n■ネスレ ふわラテ 香るミルクティー14円/杯\nhttps://t.co/PG1Kafiyir\n\n■ネスカフェ エクセラふわラテ34%OFFで18円/杯(定期便15円/杯)\nhttps://t.co/Jb60vQLmkH\n\n■ネスカフェ エクセラふわラテ ハーフ&amp;ハーフ40%OFFで18円/杯(定期便15円/杯)\nhttps://t.co/QoBHOur6p8\n-",
+    "created_at": "2026-07-13T07:00:00.000Z",
+    "matched_keywords": [
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076555118494056894",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2076555118494056894",
+    "tweet_url": "https://x.com/chibiusachi/status/2076555118494056894",
+    "text": "Amazonプライムデーセールは本日まで！\nApple AirPods4が22%オフ4720円引きの17080円で安い！！\nワイは4個買いました(｀・ω・´)ｷﾘｯ \n\nApple AirPods 4 ワイヤレスイヤホン PR\nhttps://t.co/pczGkEq9PV",
+    "created_at": "2026-07-13T06:31:35.000Z",
+    "matched_keywords": [
+      "セール",
+      "オフ",
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076554720181956954",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2076554720181956954",
+    "tweet_url": "https://x.com/money_yossy/status/2076554720181956954",
+    "text": "#Amazonプライムデー #PR\n急ぎ、在庫復活！\n【訳アリ品：8月賞味】ワンダ アサヒ飲料 クリアブラック 500ml 25%OFFクーポン74円/本\nhttps://t.co/zUDNTXshVS\n購入時、必ずクーポン適用を確認くださいm(_ _)m",
+    "created_at": "2026-07-13T06:30:00.000Z",
+    "matched_keywords": [
+      "クーポン",
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2076547169214202045",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2076547169214202045",
+    "tweet_url": "https://x.com/money_yossy/status/2076547169214202045",
+    "text": "#Amazonプライムデー #PR\n\n■AGFセール\nhttps://t.co/4gmTqgoCoN\n\n・スティックブラック 100本 【 水に溶けるコーヒー 】17円/杯(定期便15円/杯)\nhttps://t.co/9KUhnuv0o9\n\n・ちょっと贅沢な珈琲店 スティックブラック41%OFFで19円/杯(定期便17円/杯)\nhttps://t.co/x0P52WbV6X\n-",
+    "created_at": "2026-07-13T06:00:00.000Z",
+    "matched_keywords": [
+      "セール",
+      "プライムデー"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-13T12:43:59Z",
+    "status": "rejected",
+    "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  }
+]

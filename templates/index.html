@@ -1,16 +1,20 @@
 <!-- ページ種別: トップ（1ページでポイ活界隈の動きがわかるダイジェスト構成、2026-07-13改訂） -->
-<!-- 構成: 全体サマリ → TOPニュース → 各種キャンペーン(新規/進行中/終了間近) → お得商品 → 改悪情報(直近30日) -->
+<!-- 構成: 全体サマリ → TOPニュース → 各種キャンペーン(新規/進行中/終了間近) → お得商品 → 改悪情報(直近24時間) -->
+<!-- TOPニュース・お得商品・改悪情報はインフルエンサー起点(source_type=influencer)かつ元ツイート投稿から
+     24時間以内(source_posted_at基準)のもののみ表示。2026-07-14変更 -->
 <section class="summary">
   <h1>ポイ活PRESS {{PAGE_DATE}}版</h1>
   <p class="lead">ポイント改悪・新キャンペーン・高還元クレカを1ページでまとめてチェック。</p>
+  <!-- {{BACKNUMBER_NOTICE}} -->
   <div class="summary-box">
     <!-- {{SUMMARY_TEXT}} -->
     <p class="meta">更新日: {{SUMMARY_UPDATED}}</p>
   </div>
+  <p class="backnumber-link"><a href="/backnumber/">バックナンバー一覧を見る →</a></p>
 </section>
 
 <section class="top-news">
-  <h2>TOPニュース</h2>
+  <h2>TOPニュース（直近24時間）</h2>
   <div id="top-news"><!-- {{TOP_NEWS}} --></div>
 </section>
 
@@ -32,13 +36,13 @@
 </section>
 
 <section class="deals">
-  <h2>お得商品</h2>
-  <p class="note">Amazon・楽天などでインフルエンサーが特に推している商品や、期間限定の割引情報をピックアップします。</p>
+  <h2>お得商品（直近24時間）</h2>
+  <p class="note">Amazon・楽天などでインフルエンサーが直近24時間以内に紹介した商品や、期間限定の割引情報をピックアップします。</p>
   <div id="deals-list"><!-- {{DEALS_ITEMS}} --></div>
 </section>
 
 <section class="kaiaku-list">
-  <h2>改悪情報（直近30日）</h2>
+  <h2>改悪情報（直近24時間）</h2>
   <ul id="kaiaku-items"><!-- {{KAIAKU_ITEMS}} --></ul>
   <p><a href="/category/kaiaku/">改悪情報をすべて見る →</a></p>
 </section>

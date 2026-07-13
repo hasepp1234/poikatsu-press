@@ -33,3 +33,15 @@ main{max-width:960px;margin:0 auto;padding:1rem}
 .deal-item a{color:var(--accent);text-decoration:none;font-weight:600}
 #kaiaku-items{list-style:none;padding:0}
 #kaiaku-items li{padding:.4rem 0;border-bottom:1px solid #f2f2f2}
+
+/* バックナンバー（2026-07-13追加） */
+.backnumber-link{font-size:.85rem}
+.backnumber-notice{background:#fff4e5;border:1px solid #f0d9a8;border-radius:6px;padding:.6rem .8rem;font-size:.9rem}
+.backnumber-list{list-style:none;padding:0}
+.backnumber-list li{padding:.5rem 0;border-bottom:1px solid #eee}
+
+/* カテゴリページの最新号転載欄・お得商品ページ（2026-07-13追加） */
+.latest-digest{background:#f7f7f7;border-radius:6px;padding:.8rem 1rem;margin:1rem 0 1.5rem}
+.latest-digest h2{font-size:1rem;margin-top:0}
+.category-subheading{font-size:1rem;color:var(--muted);margin-top:1.5rem}
+.deals-page .note{color:var(--muted);font-size:.85rem}

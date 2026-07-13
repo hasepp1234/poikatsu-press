@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>トップ | ポイ活PRESS</title>
-<meta name="description" content="ポイント改悪・新キャンペーン速報と高還元クレカ比較。">
+<meta name="description" content="ポイント改悪・新キャンペーン速報と高還元クレカ比較を1ページで。">
 <link rel="canonical" href="https://poikatsu-press.com/">
 
 <!-- OGP / Twitter Card -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="トップ">
-<meta property="og:description" content="ポイント改悪・新キャンペーン速報と高還元クレカ比較。">
+<meta property="og:description" content="ポイント改悪・新キャンペーン速報と高還元クレカ比較を1ページで。">
 <meta property="og:url" content="https://poikatsu-press.com/">
 <meta property="og:site_name" content="ポイ活PRESS">
 <meta name="twitter:card" content="summary_large_image">
@@ -46,17 +46,49 @@ gtag('config', 'G-ERM7H8H978');
 </header>
 
 <main>
-<!-- ページ種別: トップ（最新ニュース＋注目クレカ）。build.pyがnews.json/cards.jsonから生成 -->
-<section class="latest-news">
-  <h1>ポイ活PRESS</h1>
-  <p class="lead">ポイント改悪・新キャンペーン・高還元クレカを毎日更新。</p>
-  <h2>最新ニュース</h2>
-  <ul id="news-list"><li>準備中です。</li></ul>
+<!-- ページ種別: トップ（1ページでポイ活界隈の動きがわかるダイジェスト構成、2026-07-13改訂） -->
+<!-- 構成: 全体サマリ → TOPニュース → 各種キャンペーン(新規/進行中/終了間近) → お得商品 → 改悪情報(直近30日) -->
+<section class="summary">
+  <h1>ポイ活PRESS 7/13版</h1>
+  <p class="lead">ポイント改悪・新キャンペーン・高還元クレカを1ページでまとめてチェック。</p>
+  <div class="summary-box">
+    <p>現在、クレジットカード発行キャンペーンを6件掲載中です（詳細は下記「各種キャンペーン」欄）。ニュース速報・お得商品情報は準備中のため、今後随時追加していきます。</p>
+    <p class="meta">更新日: 2026-07-13</p>
+  </div>
 </section>
-<section class="featured-cards">
-  <h2>注目のクレカ発行キャンペーン<span class="pr-tag">PR</span></h2>
-  <div id="card-list"><div class="card"><strong>楽天カード</strong> — 新規入会＆3回利用で5,000ポイント＋楽天ペイ利用で抽選3,000ポイント（最大8,000ポイント）</div><div class="card"><strong>三井住友カード（NL）</strong> — 新規入会＆条件達成で最大23,000円相当（要エントリー、SBI証券口座開設等の複合特典を含む）</div><div class="card"><strong>JCBカード W</strong> — 新規入会で最大24,000円相当プレゼント</div><div class="card"><strong>dカード</strong> — 入会特典の内容・付与ポイント数は時期により変動するため公式サイトの開催中キャンペーンをご確認ください</div><div class="card"><strong>PayPayカード</strong> — 通常の申込ページからは入会特典なし。特典付き申込は特典記載のある対象ページ限定で、内容は時期により変動</div><div class="card"><strong>エポスカード</strong> — 入会特典としてマルイ店舗またはWebで使える2,000円分クーポン（デザイン等により内容が異なる場合あり）</div></div>
+
+<section class="top-news">
+  <h2>TOPニュース</h2>
+  <div id="top-news"><p>準備中です。注目トピックが見つかり次第掲載します。</p></div>
+</section>
+
+<section class="campaigns">
+  <h2>各種キャンペーン<span class="pr-tag">PR</span></h2>
+  <div class="campaign-group">
+    <h3>新キャンペーン</h3>
+    <div class="campaign-list"><p>該当するキャンペーンは現在ありません。</p></div>
+  </div>
+  <div class="campaign-group">
+    <h3>進行中キャンペーン</h3>
+    <div class="campaign-list"><div class="campaign-item"><strong><a href="/cards/#mitsui-sumitomo-card-nl">三井住友カード（NL）</a></strong> — 新規入会＆条件達成で最大23,000円相当（要エントリー、SBI証券口座開設等の複合特典を含む） <span class="meta">（2026-07-11時点）</span></div><div class="campaign-item"><strong><a href="/cards/#jcb-card-w">JCBカード W</a></strong> — 新規入会で最大24,000円相当プレゼント <span class="meta">（2026-07-11時点）</span></div><div class="campaign-item"><strong><a href="/cards/#d-card">dカード</a></strong> — 入会特典の内容・付与ポイント数は時期により変動するため公式サイトの開催中キャンペーンをご確認ください <span class="meta">（2026-07-11時点）</span></div><div class="campaign-item"><strong><a href="/cards/#epos-card">エポスカード</a></strong> — 入会特典としてマルイ店舗またはWebで使える2,000円分クーポン（デザイン等により内容が異なる場合あり） <span class="meta">（2026-07-11時点）</span></div></div>
+  </div>
+  <div class="campaign-group">
+    <h3>終了間近キャンペーン</h3>
+    <div class="campaign-list"><div class="campaign-item"><strong><a href="/cards/#rakuten-card">楽天カード</a></strong> — 新規入会＆3回利用で5,000ポイント＋楽天ペイ利用で抽選3,000ポイント（最大8,000ポイント） <span class="meta">（2026-07-11時点）</span></div></div>
+  </div>
   <p><a href="/cards/">クレカ比較表をすべて見る →</a></p>
+</section>
+
+<section class="deals">
+  <h2>お得商品</h2>
+  <p class="note">Amazon・楽天などでインフルエンサーが特に推している商品や、期間限定の割引情報をピックアップします。</p>
+  <div id="deals-list"><p>準備中です。おすすめ商品が見つかり次第掲載します。</p></div>
+</section>
+
+<section class="kaiaku-list">
+  <h2>改悪情報（直近30日）</h2>
+  <ul id="kaiaku-items"><li>直近30日の改悪情報はありません。</li></ul>
+  <p><a href="/category/kaiaku/">改悪情報をすべて見る →</a></p>
 </section>
 
 </main>

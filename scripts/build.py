@@ -394,6 +394,78 @@ def build_categories(base, tpl_category, news, cards, urls):
         write(OUT / "category" / category / "index.html", html, urls, canonical, _today())
 
 
+def _official_link_cell(url):
+    if not url:
+        return "準備中"
+    return f'<a href="{url}" rel="nofollow" target="_blank">公式サイトを見る</a>'
+
+
+def build_qr_pay_page(base, tpl_qr_pay, qr_pay, urls):
+    if qr_pay:
+        rows = "".join(
+            f'<tr><td>{s.get("name","")}</td><td>{s.get("operator","")}</td>'
+            f'<td>{s.get("campaign_points","")}</td><td>{s.get("base_return_rate","")}</td>'
+            f'<td>{s.get("updated","")}</td><td>{_official_link_cell(s.get("official_url",""))}</td></tr>'
+            for s in qr_pay
+        )
+        table = (
+            '<table class="cards-table"><thead><tr>'
+            "<th>サービス名</th><th>運営会社</th><th>現在のキャンペーン</th>"
+            "<th>基本還元率</th><th>最終更新日</th><th>詳細</th></tr></thead><tbody>"
+            f"{rows}</tbody></table>"
+        )
+    else:
+        table = "<p>QR決済サービスの情報を準備中です。</p>"
+
+    content = tpl_qr_pay.replace("<!-- {{QR_PAY_TABLE}} -->", table)
+
+    jsonld = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": s.get("name", ""), "url": s.get("official_url", "")}
+            for i, s in enumerate(qr_pay)
+        ],
+    }
+    canonical = f"{SITE}/qr-pay/"
+    html = page(base, "QRコード決済比較", "主要QR決済サービスの基本還元率・キャンペーンを比較。",
+                canonical, "website", jsonld, content)
+    write(OUT / "qr-pay" / "index.html", html, urls, canonical, _today())
+
+
+def build_furusato_page(base, tpl_furusato, furusato, urls):
+    if furusato:
+        rows = "".join(
+            f'<tr><td>{s.get("name","")}</td><td>{s.get("operator","")}</td>'
+            f'<td>{s.get("campaign_points","")}</td><td>{s.get("features","")}</td>'
+            f'<td>{s.get("updated","")}</td><td>{_official_link_cell(s.get("official_url",""))}</td></tr>'
+            for s in furusato
+        )
+        table = (
+            '<table class="cards-table"><thead><tr>'
+            "<th>サイト名</th><th>運営会社</th><th>現在の特典・キャンペーン</th>"
+            "<th>特徴</th><th>最終更新日</th><th>詳細</th></tr></thead><tbody>"
+            f"{rows}</tbody></table>"
+        )
+    else:
+        table = "<p>ふるさと納税サイトの情報を準備中です。</p>"
+
+    content = tpl_furusato.replace("<!-- {{FURUSATO_TABLE}} -->", table)
+
+    jsonld = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": s.get("name", ""), "url": s.get("official_url", "")}
+            for i, s in enumerate(furusato)
+        ],
+    }
+    canonical = f"{SITE}/furusato/"
+    html = page(base, "ふるさと納税サイト比較", "主要ふるさと納税サイトの特徴・キャンペーンを比較。",
+                canonical, "website", jsonld, content)
+    write(OUT / "furusato" / "index.html", html, urls, canonical, _today())
+
+
 def build_deals_page(base, deals, urls):
     page_date = _page_date_label()
     today_iso = _today()
@@ -514,6 +586,8 @@ def main():
     cards = load("cards.json")
     guides = load("guides.json")
     deals = load("deals.json")
+    qr_pay = load("qr_pay.json")
+    furusato = load("furusato.json")
     summary = load_obj("summary.json", {"summary_text": "", "updated": ""})
 
     base = (TPL / "base.html").read_text(encoding="utf-8")
@@ -522,6 +596,8 @@ def main():
     tpl_cards = (TPL / "cards.html").read_text(encoding="utf-8")
     tpl_category = (TPL / "category.html").read_text(encoding="utf-8")
     tpl_guide = (TPL / "guide.html").read_text(encoding="utf-8")
+    tpl_qr_pay = (TPL / "qr_pay.html").read_text(encoding="utf-8")
+    tpl_furusato = (TPL / "furusato.html").read_text(encoding="utf-8")
 
     OUT.mkdir(exist_ok=True)
     urls = []
@@ -531,13 +607,16 @@ def main():
     build_cards(base, tpl_cards, cards, urls)
     build_categories(base, tpl_category, news, cards, urls)
     build_deals_page(base, deals, urls)
+    build_qr_pay_page(base, tpl_qr_pay, qr_pay, urls)
+    build_furusato_page(base, tpl_furusato, furusato, urls)
     build_guides(base, tpl_guide, guides, cards, urls)
     build_guide_index(base, guides, urls)
     write_sitemap(urls)
 
     print(
         f"built: index=1, news={len(news)}, cards_page=1, categories={len(CATEGORY_LABELS)}, "
-        f"guides={len(guides)}, deals={len(deals)}, sitemap_urls={len(urls)}"
+        f"guides={len(guides)}, deals={len(deals)}, qr_pay={len(qr_pay)}, furusato={len(furusato)}, "
+        f"sitemap_urls={len(urls)}"
     )
 
 

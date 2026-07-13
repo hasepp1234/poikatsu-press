@@ -567,6 +567,100 @@ def build_guide_index(base, guides, urls):
     write(OUT / "guide" / "index.html", html, urls, canonical, _today())
 
 
+CONTACT_FORM_URL = "https://forms.gle/AtPvyEsJBuVMjCvf9"
+
+
+def build_static_pages(base, urls):
+    """about/contact/privacy … footer固定リンクの3ページ（2026-07-13追加・課題#23対応）。
+    データファイルを持たない静的ページのため、本文はここに直書きする。
+    個人名・個人メールアドレスは掲載しない（問い合わせはGoogleフォーム経由に統一）。
+    """
+    today_iso = _today()
+
+    about_content = (
+        '<section class="static-page"><h1>運営者情報</h1>'
+        "<p>「ポイ活PRESS」（poikatsu-press.com）は、クレジットカード・QRコード決済・"
+        "ふるさと納税・お得なキャンペーン情報など、ポイ活に関する情報を整理してお届けする"
+        "情報メディアです。公式サイト等の一次情報を確認のうえ、内容を整理して掲載しています。</p>"
+        '<table class="info-table">'
+        "<tr><th>サイト名</th><td>ポイ活PRESS</td></tr>"
+        "<tr><th>運営者</th><td>ポイ活PRESS運営事務局</td></tr>"
+        f'<tr><th>サイトURL</th><td><a href="{SITE}/">{SITE}/</a></td></tr>'
+        "<tr><th>運営開始</th><td>2026年7月</td></tr>"
+        '<tr><th>お問い合わせ</th><td><a href="/contact/">お問い合わせページ</a>よりご連絡ください</td></tr>'
+        "</table>"
+        "<h2>掲載情報について</h2>"
+        "<p>価格・還元率・キャンペーン期間などの数値情報は、可能な限り公式一次ソースを確認したうえで"
+        "掲載日時点の情報として掲載しています。内容は予告なく変更される場合がありますので、"
+        "お申し込み等の際は必ず各社公式サイトで最新情報をご確認ください。</p>"
+        "<h2>広告・アフィリエイトについて</h2>"
+        "<p>当サイトはアフィリエイト広告を利用しており、掲載リンクを経由した申込み・購入等により"
+        "当サイトに成果報酬が発生する場合があります。該当する箇所には「PR」を明示しています。"
+        "広告の有無にかかわらず、内容の評価や紹介順位を恣意的に操作することはありません。</p>"
+        "</section>"
+    )
+    canonical = f"{SITE}/about/"
+    jsonld = {"@context": "https://schema.org", "@type": "AboutPage", "name": "運営者情報"}
+    html = page(base, "運営者情報", "ポイ活PRESSの運営者情報・サイトの目的についてご案内します。",
+                canonical, "website", jsonld, about_content)
+    write(OUT / "about" / "index.html", html, urls, canonical, today_iso)
+
+    contact_content = (
+        '<section class="static-page"><h1>お問い合わせ</h1>'
+        "<p>ポイ活PRESSに関するお問い合わせ・掲載情報の誤り等のご指摘は、下記のGoogleフォームより"
+        "お願いいたします。内容を確認のうえ、必要に応じてご連絡いたします。"
+        "（個人情報保護のため、メールアドレスの直接掲載は行っておりません）</p>"
+        f'<p><a class="contact-form-link" href="{CONTACT_FORM_URL}" target="_blank" '
+        'rel="noopener">お問い合わせフォームを開く</a></p>'
+        "</section>"
+    )
+    canonical = f"{SITE}/contact/"
+    jsonld = {"@context": "https://schema.org", "@type": "ContactPage", "name": "お問い合わせ"}
+    html = page(base, "お問い合わせ", "ポイ活PRESSへのお問い合わせはこちらのフォームからお願いいたします。",
+                canonical, "website", jsonld, contact_content)
+    write(OUT / "contact" / "index.html", html, urls, canonical, today_iso)
+
+    privacy_content = (
+        '<section class="static-page"><h1>プライバシーポリシー</h1>'
+        f'<p class="meta">最終更新日: {today_iso}</p>'
+        "<p>「ポイ活PRESS」（以下「当サイト」）は、利用者の個人情報の取り扱いについて、"
+        "以下のとおりプライバシーポリシーを定めます。</p>"
+        "<h2>個人情報の収集について</h2>"
+        "<p>当サイトでは、お問い合わせの際にお名前・メールアドレス等の情報をGoogleフォーム経由で"
+        "ご提供いただく場合があります。取得した情報は、お問い合わせへの対応以外の目的では利用いたしません。</p>"
+        "<h2>アクセス解析ツールについて</h2>"
+        "<p>当サイトは、利用状況を把握するためGoogle アナリティクス（GA4）を利用しています。"
+        "このツールはトラフィックデータの収集のためにCookieを使用しますが、収集は匿名で行われ、"
+        "個人を特定するものではありません。</p>"
+        "<h2>広告の配信について（Google アドセンス）</h2>"
+        "<p>当サイトは、第三者配信の広告サービス「Google アドセンス」を利用しています。"
+        "広告配信事業者は、利用者の興味に応じた広告を表示するためにCookieを使用することがあります。"
+        "Cookieを無効にする設定や、Google アドセンスに関する詳細については、"
+        '<a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank" '
+        'rel="noopener">Googleの広告ポリシーページ</a>をご覧ください。</p>'
+        "<h2>アフィリエイトプログラムについて</h2>"
+        "<p>当サイトは、クレジットカード会社・ASP（アフィリエイトサービスプロバイダ）等との"
+        "アフィリエイトプログラム（成果報酬型広告）に参加しています。掲載リンクを経由して"
+        "申込み・購入等が行われた場合、当サイトに成果報酬が支払われることがありますが、"
+        "これによって利用者が負担する金額が変わることはありません。該当箇所には「PR」を明示しています。</p>"
+        "<h2>掲載情報の正確性について</h2>"
+        "<p>当サイトに掲載する価格・還元率・キャンペーン条件等は、公式一次ソースを確認のうえ"
+        "掲載時点の情報として記載していますが、内容は予告なく変更される場合があります。"
+        "最新情報は必ず各社公式サイトでご確認ください。内容に誤りがあった場合は速やかに訂正いたします。</p>"
+        "<h2>プライバシーポリシーの変更について</h2>"
+        "<p>当サイトは、必要に応じて本ポリシーの内容を変更することがあります。"
+        "変更後のプライバシーポリシーは、当ページに掲載した時点から効力を生じるものとします。</p>"
+        "<h2>お問い合わせ</h2>"
+        '<p>本ポリシーに関するお問い合わせは、<a href="/contact/">お問い合わせページ</a>よりお願いいたします。</p>'
+        "</section>"
+    )
+    canonical = f"{SITE}/privacy/"
+    jsonld = {"@context": "https://schema.org", "@type": "WebPage", "name": "プライバシーポリシー"}
+    html = page(base, "プライバシーポリシー", "ポイ活PRESSのプライバシーポリシー。",
+                canonical, "website", jsonld, privacy_content)
+    write(OUT / "privacy" / "index.html", html, urls, canonical, today_iso)
+
+
 def write_sitemap(urls):
     entries = "\n".join(
         f"  <url><loc>{u['loc']}</loc>" + (f"<lastmod>{u['lastmod']}</lastmod>" if u["lastmod"] else "") + "</url>"
@@ -611,6 +705,7 @@ def main():
     build_furusato_page(base, tpl_furusato, furusato, urls)
     build_guides(base, tpl_guide, guides, cards, urls)
     build_guide_index(base, guides, urls)
+    build_static_pages(base, urls)
     write_sitemap(urls)
 
     print(

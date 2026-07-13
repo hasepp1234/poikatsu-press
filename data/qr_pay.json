@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "paypay",
+    "name": "PayPay",
+    "operator": "PayPay株式会社",
+    "campaign_points": "「超PayPay祭」開催中。PayPayスクラッチくじ（本人確認済みユーザー対象）や、Yahoo!ショッピングでの期間限定ポイント還元など複数企画を実施中",
+    "campaign_conditions": "企画ごとに条件が異なる。スクラッチくじ等はPayPayの本人確認（eKYC）完了が必要。詳細は公式キャンペーンページで要確認",
+    "campaign_start": "2026-06-19",
+    "campaign_end": "2026-07-31",
+    "base_return_rate": "残高・残高カード払いは基本0.5%、クレジット（PayPayクレジット・クレジット利用設定済PayPayカード）払いは基本1.0%。PayPayステップの条件達成で+0.5%上乗せ（最大1.5%）",
+    "official_url": "https://paypay.ne.jp/event/paypay-matsuri202606/",
+    "updated": "2026-07-13"
+  },
+  {
+    "slug": "rakuten-pay",
+    "name": "楽天ペイ",
+    "operator": "楽天ペイメント株式会社",
+    "campaign_points": "「楽天ペイ 超トク還元祭」開催中。楽天各サービス利用でポイントがもらえる企画やクーポン配布、抽選企画で構成",
+    "campaign_conditions": "企画によっては事前エントリーが必要。特典進呈には各サービスごとに上限・条件あり",
+    "campaign_start": "2026-07-01",
+    "campaign_end": "2026-07-31",
+    "base_return_rate": "楽天キャッシュ利用で200円（税込）につき1ポイント＝0.5%。条件達成で最大1.5%還元",
+    "official_url": "https://pay.rakuten.co.jp/campaign/chotoku-kangen/",
+    "updated": "2026-07-13"
+  },
+  {
+    "slug": "d-barai",
+    "name": "d払い",
+    "operator": "株式会社NTTドコモ・フィナンシャルグループ（2026年7月1日付でNTTドコモの金融・決済サービス事業を承継）",
+    "campaign_points": "「毎週おトクなd曜日」実施中。エントリー月の毎週金・土曜日に対象加盟店で利用すると基本還元に加えポイント上乗せ",
+    "campaign_conditions": "毎月のエントリーが必要。進呈上限は月間10,000ポイントまで。対象加盟店・支払い方法に条件あり",
+    "campaign_start": "",
+    "campaign_end": "",
+    "base_return_rate": "200円（税込）ごとに1ポイント＝0.5%。支払い方法をdカード等に設定すると+0.5%（合計1%）",
+    "official_url": "https://service.smt.docomo.ne.jp/keitai_payment/campaign/dp/cpn_dp5_sat.html",
+    "updated": "2026-07-13"
+  },
+  {
+    "slug": "au-pay",
+    "name": "au PAY",
+    "operator": "auペイメント株式会社（2026年7月1日付でauフィナンシャルサービス株式会社を吸収合併）",
+    "campaign_points": "au PAY カードからau PAY残高へのオートチャージ利用で、抽選で合計1億Pontaポイントを山分けするキャンペーンを実施中",
+    "campaign_conditions": "エントリー不要。対象はau PAY カード／au PAY ゴールドカードによるオートチャージのみ。1人あたり進呈上限200ポイント",
+    "campaign_start": "2026-07-01",
+    "campaign_end": "2026-10-31",
+    "base_return_rate": "200円（税込）ごとに1Pontaポイント＝0.5%",
+    "official_url": "https://www.kddi-fs.com/campaign/2607shopping_ac/",
+    "updated": "2026-07-13"
+  }
+]

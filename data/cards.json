@@ -94,5 +94,37 @@
     "affiliate_url": "",
     "official_url": "https://www.eposcard.co.jp/admission/index.html",
     "updated": "2026-07-11"
+  },
+  {
+    "slug": "aeon-card",
+    "name": "イオンカード（WAON POINT）",
+    "issuer": "イオンフィナンシャルサービス株式会社",
+    "brand": "Visa／Mastercard／JCB（カードデザインにより選択可能なブランドが異なる）",
+    "campaign_points": "新規入会特典として1,000WAON POINT。加えて発行月の翌々月10日までの利用特典としてカード利用額の10%相当（上限4,000WAON POINT）を進呈し、合計最大5,000WAON POINT",
+    "campaign_conditions": "Webから新規入会（入会特典の受け取りにはAEON PayアプリまたはWeb会員サイトでの操作が必要）。発行月の翌々月10日までに累計10,000円（税込）以上のクレジット利用、かつAEON Payの「イオンカード払い」を1回以上利用することが利用特典の条件",
+    "campaign_start": "",
+    "campaign_end": "",
+    "annual_fee": "永年無料",
+    "base_return_rate": "0.5%（200円につき1WAON POINT）／イオングループ対象店舗は基本の2倍",
+    "category": "credit-card",
+    "affiliate_url": "",
+    "official_url": "https://www.aeon.co.jp/campaign/lp/aeoncardwaon/",
+    "updated": "2026-07-13"
+  },
+  {
+    "slug": "recruit-card",
+    "name": "リクルートカード",
+    "issuer": "JCBブランド: 株式会社ジェーシービー／Visa・Mastercardブランド: 三菱UFJニコス株式会社",
+    "brand": "JCB／Visa／Mastercard",
+    "campaign_points": "入会特典・付与ポイント数は時期により変動するため公式サイトの開催中キャンペーンをご確認ください（新規入会特典・初回利用特典・携帯電話料金決済特典の3つで構成）",
+    "campaign_conditions": "対象期間中の新規入会に加え、発行日翌日から60日以内の初回利用、対象携帯電話会社の料金をカード払いに設定することが各特典の条件。過去にリクルートカード各種へ申込んだことがある場合は対象外",
+    "campaign_start": "",
+    "campaign_end": "",
+    "annual_fee": "永年無料",
+    "base_return_rate": "1.2%",
+    "category": "credit-card",
+    "affiliate_url": "",
+    "official_url": "https://recruit-card.jp/campaign/newadmission/",
+    "updated": "2026-07-13"
   }
 ]

@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "satofull",
+    "name": "さとふる",
+    "operator": "株式会社さとふる",
+    "campaign_points": "公式ページ（2026年7月13日時点）では「現在開催中のキャンペーンはありません」と案内。実施状況は時期により変動するため公式サイトで要確認",
+    "campaign_conditions": "",
+    "campaign_start": "",
+    "campaign_end": "",
+    "features": "独自ポイント制度「さとふるマイポイント・マイステップ」、ワンストップ特例申請のアプリ内完結、控除証明書の電子発行に対応",
+    "official_url": "https://www.satofull.jp/",
+    "updated": "2026-07-13"
+  },
+  {
+    "slug": "furusato-choice",
+    "name": "ふるさとチョイス",
+    "operator": "株式会社トラストバンク",
+    "campaign_points": "決済サービスごとの特典を案内。例: dカード利用額に応じたクーポン、Amazon Pay初回利用者向けAmazonギフトカード付与（2026年5月1日〜12月31日）、PayPay決済のスクラッチ抽選（〜2026年7月31日）など",
+    "campaign_conditions": "各決済サービスへの事前エントリー、または対象決済手段での支払いが条件（サービスごとに異なる）",
+    "campaign_start": "2026-05-01",
+    "campaign_end": "2026-12-31",
+    "features": "お礼の品掲載数・自治体数・決済手段数が豊富（自社調べ）。独自の「チョイス公式ポイント」「チョイスPay」等を展開",
+    "official_url": "https://www.furusato-tax.jp/",
+    "updated": "2026-07-13"
+  },
+  {
+    "slug": "rakuten-furusato",
+    "name": "楽天ふるさと納税",
+    "operator": "楽天グループ株式会社",
+    "campaign_points": "2025年10月1日の総務省告示施行によりポータルサイト側のポイント付与は不可に。楽天カード決済に伴うカード会社側のポイント付与（SPU・「5と0のつく日」特典）は継続",
+    "campaign_conditions": "楽天カードを保有し楽天会員であること。「5と0のつく日」特典は開催日ごとに毎回エントリーが必要",
+    "campaign_start": "",
+    "campaign_end": "",
+    "features": "寄付先自治体・返礼品数が豊富、控除上限額シミュレーター、ワンストップ特例のオンライン申請に対応",
+    "official_url": "https://event.rakuten.co.jp/furusato/",
+    "updated": "2026-07-13"
+  },
+  {
+    "slug": "furunavi",
+    "name": "ふるなび",
+    "operator": "株式会社アイモバイル",
+    "campaign_points": "独自決済「ふるなびマネー」への事前エントリー＆チャージで残高が増量される企画や、紹介1件につき500円分（月最大5,000円分）がもらえる紹介キャンペーン（〜2027年1月31日）を実施",
+    "campaign_conditions": "多くは要事前エントリー。ふるなびマネーへのチャージや紹介プログラムの利用が条件（キャンペーンにより異なる）",
+    "campaign_start": "",
+    "campaign_end": "2027-01-31",
+    "features": "ポイント制「ふるなびカタログ」、寄附で旅行に使える「ふるなびトラベル」、独自決済「ふるなびマネー」、レビュー投稿等で貯まる「ふるなびコイン」を展開",
+    "official_url": "https://furunavi.jp/",
+    "updated": "2026-07-13"
+  }
+]

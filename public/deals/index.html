@@ -48,7 +48,7 @@ gtag('config', 'G-ERM7H8H978');
 </header>
 
 <main>
-<section class="deals-page"><h1>お得商品</h1><p class="note">Amazon・楽天などでインフルエンサーが特に推している商品や、期間限定の割引情報をピックアップします。掲載時は自社のアフィリエイトリンクを使用し、該当する場合はPR表記を付けます。元の投稿から24時間以内の情報のみ掲載しています。</p><h2>最新号（7/13版）の内容</h2><div id="deals-list"><p>準備中です。直近24時間以内のお得商品が見つかり次第掲載します。</p></div><p class="meta">出典: <a href="/backnumber/2026-07-13.html">7/13版バックナンバー</a></p></section>
+<section class="deals-page"><h1>お得商品</h1><p class="note">Amazon・楽天などでインフルエンサーが特に推している商品や、期間限定の割引情報をピックアップします。掲載時は自社のアフィリエイトリンクを使用し、該当する場合はPR表記を付けます。元の投稿から24時間以内の情報のみ掲載しています。</p><h2>最新号（7/14版）の内容</h2><div id="deals-list"><p>準備中です。直近24時間以内のお得商品が見つかり次第掲載します。</p></div><p class="meta">出典: <a href="/backnumber/2026-07-14.html">7/14版バックナンバー</a></p></section>
 </main>
 
 <footer class="site-footer">
@@ -56,5 +56,22 @@ gtag('config', 'G-ERM7H8H978');
   <p><a href="/about/">運営情報</a> ・ <a href="/contact/">お問い合わせ</a> ・ <a href="/privacy/">プライバシーポリシー</a></p>
   <small>© ポイ活PRESS</small>
 </footer>
+
+<!-- ナビの現在地ハイライト（2026-07-14追加。全ページ共通のbase.htmlはビルド時に
+     どのページかを知らないため、表示側でlocation.pathnameと突き合わせて判定する） -->
+<script>
+(function(){
+  var path = location.pathname;
+  var links = document.querySelectorAll('.site-header nav a');
+  var best = null;
+  for (var i = 0; i < links.length; i++) {
+    var href = links[i].getAttribute('href');
+    if (href && href !== '/' && path.indexOf(href) === 0) {
+      if (!best || href.length > best.getAttribute('href').length) best = links[i];
+    }
+  }
+  if (best) best.classList.add('active');
+})();
+</script>
 </body>
 </html>

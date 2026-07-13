@@ -51,3 +51,12 @@ main{max-width:960px;margin:0 auto;padding:1rem}
 .cards-table{width:100%;border-collapse:collapse;font-size:.85rem}
 .cards-table th,.cards-table td{border:1px solid #eee;padding:.5rem .6rem;text-align:left;vertical-align:top}
 .cards-table th{background:#f7f7f7;white-space:nowrap}
+
+/* 運営情報・お問い合わせ・プライバシーポリシー（2026-07-13追加） */
+.static-page .info-table{width:100%;border-collapse:collapse;margin:1rem 0}
+.static-page .info-table th,.static-page .info-table td{border:1px solid #eee;padding:.5rem .8rem;text-align:left}
+.static-page .info-table th{background:#f7f7f7;white-space:nowrap;width:30%}
+.static-page h2{font-size:1.05rem;margin-top:1.8rem}
+.static-page .meta{color:var(--muted);font-size:.85rem}
+.contact-form-link{display:inline-block;background:var(--accent,#1f3864);color:#fff;padding:.6rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:600}
+.contact-form-link:hover{opacity:.9}

@@ -151,11 +151,13 @@ def classify_campaigns(cards):
     return new_list, ongoing_list, ending_list
 
 
-def _campaign_group_html(cards_list):
+def _campaign_group_html(cards_list, kind=""):
+    """kind: "new" / "ending" / ""(進行中)。カード左のアクセント色分けに使う（2026-07-14追加）"""
     if not cards_list:
         return "<p>該当するキャンペーンは現在ありません。</p>"
+    css_class = f"campaign-item campaign-item--{kind}" if kind else "campaign-item"
     return "".join(
-        f'<div class="campaign-item"><strong><a href="/cards/#{c.get("slug","")}">{c.get("name","")}</a></strong> '
+        f'<div class="{css_class}"><strong><a href="/cards/#{c.get("slug","")}">{c.get("name","")}</a></strong> '
         f'— {c.get("campaign_points","")} <span class="meta">（{c.get("updated","")}時点）</span></div>'
         for c in cards_list
     )
@@ -258,9 +260,9 @@ def build_index(base, tpl_index, news, cards, deals, summary, urls):
     content = content.replace("<!-- {{SUMMARY_TEXT}} -->", f'<p>{summary.get("summary_text","")}</p>')
     content = content.replace("{{SUMMARY_UPDATED}}", summary.get("updated", ""))
     content = content.replace("<!-- {{TOP_NEWS}} -->", _top_news_html(news))
-    content = content.replace("<!-- {{CAMPAIGNS_NEW}} -->", _campaign_group_html(new_list))
+    content = content.replace("<!-- {{CAMPAIGNS_NEW}} -->", _campaign_group_html(new_list, "new"))
     content = content.replace("<!-- {{CAMPAIGNS_ONGOING}} -->", _campaign_group_html(ongoing_list))
-    content = content.replace("<!-- {{CAMPAIGNS_ENDING}} -->", _campaign_group_html(ending_list))
+    content = content.replace("<!-- {{CAMPAIGNS_ENDING}} -->", _campaign_group_html(ending_list, "ending"))
     content = content.replace("<!-- {{DEALS_ITEMS}} -->", _deals_items_html(deals))
     content = content.replace("<!-- {{KAIAKU_ITEMS}} -->", _kaiaku_items_html(news))
 
@@ -326,11 +328,11 @@ def _card_link_cell(c: dict) -> str:
     official_url = c.get("official_url", "")
     if affiliate_url:
         return (
-            f'<a href="{affiliate_url}" rel="nofollow sponsored" target="_blank">'
+            f'<a class="btn-outline" href="{affiliate_url}" rel="nofollow sponsored" target="_blank">'
             f'公式サイトで詳細を見る<span class="pr-tag">PR</span></a>'
         )
     if official_url:
-        return f'<a href="{official_url}" rel="nofollow" target="_blank">公式サイトで詳細を見る</a>'
+        return f'<a class="btn-outline" href="{official_url}" rel="nofollow" target="_blank">公式サイトで詳細を見る</a>'
     return "準備中"
 
 
@@ -380,14 +382,16 @@ def _latest_digest_html(category, news, cards, page_date, today_iso):
         new_list, ongoing_list, ending_list = classify_campaigns(cards)
         body = (
             '<div class="campaign-group"><h3>新キャンペーン</h3><div class="campaign-list">'
-            f'{_campaign_group_html(new_list)}</div></div>'
+            f'{_campaign_group_html(new_list, "new")}</div></div>'
             '<div class="campaign-group"><h3>進行中キャンペーン</h3><div class="campaign-list">'
             f'{_campaign_group_html(ongoing_list)}</div></div>'
             '<div class="campaign-group"><h3>終了間近キャンペーン</h3><div class="campaign-list">'
-            f'{_campaign_group_html(ending_list)}</div></div>'
+            f'{_campaign_group_html(ending_list, "ending")}</div></div>'
         )
     elif category == "kaiaku":
-        body = f'<ul class="kaiaku-items">{_kaiaku_items_html(news)}</ul>'
+        # 2026-07-14修正: CSSは#kaiaku-items（ID）を参照しているため、従来の
+        # class="kaiaku-items"ではスタイルが当たらないバグがあった。idに統一
+        body = f'<ul id="kaiaku-items">{_kaiaku_items_html(news)}</ul>'
     else:
         return ""
 
@@ -429,7 +433,7 @@ def build_categories(base, tpl_category, news, cards, urls):
 def _official_link_cell(url):
     if not url:
         return "準備中"
-    return f'<a href="{url}" rel="nofollow" target="_blank">公式サイトを見る</a>'
+    return f'<a class="btn-outline" href="{url}" rel="nofollow" target="_blank">公式サイトを見る</a>'
 
 
 def build_qr_pay_page(base, tpl_qr_pay, qr_pay, urls):

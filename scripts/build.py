@@ -2,15 +2,17 @@
 data/*.json + templates/*.html → public/ にHTML・sitemap・カテゴリ一覧を生成。
 
 本実装内容:
-- public/index.html … トップ（最新ニュース＋注目クレカ）
+- public/index.html … トップ（全体サマリ→TOPニュース→各種キャンペーン→お得商品→改悪情報の1ページダイジェスト、2026-07-13改訂）
 - public/news/{news_id}.html … 個別ニュース記事（NewsArticle JSON-LD）
 - public/cards/index.html … クレカ比較表（ItemList JSON-LD）
 - public/category/{category}/index.html … カテゴリ別ニュース一覧
 - public/guide/{slug}.html … 入門・最適化ガイド（FAQがあればFAQPage JSON-LD）
+- public/guide/index.html … ガイド一覧
 - public/sitemap.xml … 上記すべてのURLから動的生成
 
-news_raw.json は検知ログ（下書き前段）のため生成対象外。news.json/cards.json/guides.jsonのみを対象にする。
+news_raw.json は検知ログ（下書き前段）のため生成対象外。news.json/cards.json/guides.json/deals.json/summary.jsonを対象にする。
 """
+import datetime
 import json
 import pathlib
 
@@ -30,10 +32,21 @@ CATEGORY_LABELS = {
     "point-service": "ポイントサービス",
 }
 
+NEW_CAMPAIGN_WINDOW_DAYS = 7
+ENDING_SOON_WINDOW_DAYS = 7
+KAIAKU_WINDOW_DAYS = 30
+
 
 def load(name):
     p = DATA / name
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else []
+
+
+def load_obj(name, default=None):
+    p = DATA / name
+    if p.exists():
+        return json.loads(p.read_text(encoding="utf-8"))
+    return default or {}
 
 
 def render(template: str, values: dict) -> str:
@@ -60,26 +73,124 @@ def page(base: str, title: str, description: str, canonical: str, og_type: str, 
 
 
 def _today():
-    import datetime
     return datetime.date.today().isoformat()
 
 
-def build_index(base, tpl_index, news, cards, urls):
-    news_sorted = sorted(news, key=lambda n: n.get("published", ""), reverse=True)[:10]
-    news_items = "".join(
-        f'<li><a href="/news/{n.get("news_id","")}.html">{n.get("title","")}</a></li>'
-        for n in news_sorted
-    ) or "<li>準備中です。</li>"
+def _parse_date(s):
+    if not s:
+        return None
+    try:
+        return datetime.date.fromisoformat(s)
+    except ValueError:
+        return None
 
-    card_items = "".join(
-        f'<div class="card"><strong>{c.get("name","")}</strong> — {c.get("campaign_points","")}</div>'
-        for c in cards[:6]
-    ) or '<div class="card">クレカ案件を準備中です。</div>'
 
-    content = tpl_index.replace("<!-- {{NEWS_ITEMS}} -->", news_items)
-    content = content.replace("<!-- {{CARD_ITEMS}} -->", card_items)
+def classify_campaigns(cards):
+    """cards.jsonのcampaign_start/campaign_endから新規/進行中/終了間近を分類する（2026-07-13追加）。
+    - campaign_pointsに「特典なし」を含むカードは対象外（/cards/の比較表には引き続き掲載）
+    - campaign_endがあり、今日から0〜ENDING_SOON_WINDOW_DAYS日以内 → 終了間近（既に終了した分は除外）
+    - 上記に該当せずcampaign_startがあり、開始から0〜NEW_CAMPAIGN_WINDOW_DAYS日以内 → 新規
+    - それ以外の特典ありカード → 進行中
+    """
+    today = datetime.date.today()
+    new_list, ongoing_list, ending_list = [], [], []
+    for c in cards:
+        if "特典なし" in c.get("campaign_points", ""):
+            continue
+        start = _parse_date(c.get("campaign_start", ""))
+        end = _parse_date(c.get("campaign_end", ""))
+        if end:
+            days_left = (end - today).days
+            if 0 <= days_left <= ENDING_SOON_WINDOW_DAYS:
+                ending_list.append(c)
+                continue
+            if days_left < 0:
+                continue
+        if start:
+            days_since_start = (today - start).days
+            if 0 <= days_since_start <= NEW_CAMPAIGN_WINDOW_DAYS:
+                new_list.append(c)
+                continue
+        ongoing_list.append(c)
+    return new_list, ongoing_list, ending_list
 
-    html = page(base, "トップ", "ポイント改悪・新キャンペーン速報と高還元クレカ比較。",
+
+def _campaign_group_html(cards_list):
+    if not cards_list:
+        return "<p>該当するキャンペーンは現在ありません。</p>"
+    return "".join(
+        f'<div class="campaign-item"><strong><a href="/cards/#{c.get("slug","")}">{c.get("name","")}</a></strong> '
+        f'— {c.get("campaign_points","")} <span class="meta">（{c.get("updated","")}時点）</span></div>'
+        for c in cards_list
+    )
+
+
+def _top_news_html(news):
+    featured = [n for n in news if n.get("featured")]
+    featured.sort(key=lambda n: n.get("published", ""), reverse=True)
+    if not featured:
+        return "<p>準備中です。注目トピックが見つかり次第掲載します。</p>"
+    n = featured[0]
+    return (
+        f'<div class="top-news-item"><a href="/news/{n.get("news_id","")}.html">'
+        f'<strong>{n.get("title","")}</strong></a><p>{n.get("summary","")}</p></div>'
+    )
+
+
+def _kaiaku_items_html(news):
+    today = datetime.date.today()
+    items = []
+    for n in news:
+        if n.get("category") != "kaiaku":
+            continue
+        pub = _parse_date((n.get("published") or "")[:10])
+        if not pub or (today - pub).days > KAIAKU_WINDOW_DAYS:
+            continue
+        items.append(n)
+    if not items:
+        return "<li>直近30日の改悪情報はありません。</li>"
+    items.sort(key=lambda n: n.get("published", ""), reverse=True)
+    return "".join(
+        f'<li><span class="meta">{n.get("published","")[:10]}</span> '
+        f'<a href="/news/{n.get("news_id","")}.html">{n.get("title","")}</a></li>'
+        for n in items
+    )
+
+
+def _deals_items_html(deals):
+    if not deals:
+        return "<p>準備中です。おすすめ商品が見つかり次第掲載します。</p>"
+    items = []
+    for d in deals:
+        affiliate = d.get("is_affiliate")
+        rel = "nofollow sponsored" if affiliate else "nofollow"
+        pr = '<span class="pr-tag">PR</span>' if affiliate else ""
+        items.append(
+            f'<div class="deal-item"><a href="{d.get("url","")}" rel="{rel}" target="_blank">'
+            f'{d.get("title","")}</a>{pr}<p>{d.get("description","")}</p></div>'
+        )
+    return "".join(items)
+
+
+def _page_date_label():
+    today = datetime.date.today()
+    return f"{today.month}/{today.day}"
+
+
+def build_index(base, tpl_index, news, cards, deals, summary, urls):
+    new_list, ongoing_list, ending_list = classify_campaigns(cards)
+
+    content = tpl_index.replace("{{PAGE_DATE}}", _page_date_label())
+    content = content.replace("<!-- {{SUMMARY_TEXT}} -->", f'<p>{summary.get("summary_text","")}</p>')
+    content = content.replace("{{SUMMARY_UPDATED}}", summary.get("updated", ""))
+    content = content.replace("<!-- {{TOP_NEWS}} -->", _top_news_html(news))
+    content = content.replace("<!-- {{CAMPAIGNS_NEW}} -->", _campaign_group_html(new_list))
+    content = content.replace("<!-- {{CAMPAIGNS_ONGOING}} -->", _campaign_group_html(ongoing_list))
+    content = content.replace("<!-- {{CAMPAIGNS_ENDING}} -->", _campaign_group_html(ending_list))
+    content = content.replace("<!-- {{DEALS_ITEMS}} -->", _deals_items_html(deals))
+    content = content.replace("<!-- {{KAIAKU_ITEMS}} -->", _kaiaku_items_html(news))
+
+    html = page(base, "トップ", "ポイント改悪・新キャンペーン速報と高還元クレカ比較を1ページで。",
                 f"{SITE}/", "website",
                 {"@context": "https://schema.org", "@type": "WebSite", "name": "ポイ活PRESS"},
                 content)
@@ -292,6 +403,8 @@ def main():
     news = load("news.json")
     cards = load("cards.json")
     guides = load("guides.json")
+    deals = load("deals.json")
+    summary = load_obj("summary.json", {"summary_text": "", "updated": ""})
 
     base = (TPL / "base.html").read_text(encoding="utf-8")
     tpl_index = (TPL / "index.html").read_text(encoding="utf-8")
@@ -303,7 +416,7 @@ def main():
     OUT.mkdir(exist_ok=True)
     urls = []
 
-    build_index(base, tpl_index, news, cards, urls)
+    build_index(base, tpl_index, news, cards, deals, summary, urls)
     build_news(base, tpl_news, news, urls)
     build_cards(base, tpl_cards, cards, urls)
     build_categories(base, tpl_category, news, urls)
@@ -313,7 +426,7 @@ def main():
 
     print(
         f"built: index=1, news={len(news)}, cards_page=1, categories={len(CATEGORY_LABELS)}, "
-        f"guides={len(guides)}, sitemap_urls={len(urls)}"
+        f"guides={len(guides)}, deals={len(deals)}, sitemap_urls={len(urls)}"
     )
 
 

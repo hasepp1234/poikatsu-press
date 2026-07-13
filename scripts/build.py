@@ -177,10 +177,52 @@ def _page_date_label():
     return f"{today.month}/{today.day}"
 
 
+def _parse_backnumber_date(stem):
+    if stem == "index":
+        return None
+    return _parse_date(stem)
+
+
+def _date_to_label(date_str):
+    d = _parse_date(date_str)
+    return f"{d.month}/{d.day}" if d else date_str
+
+
+def _list_backnumber_dates():
+    dir_path = OUT / "backnumber"
+    if not dir_path.exists():
+        return []
+    dates = [p.stem for p in dir_path.glob("*.html") if _parse_backnumber_date(p.stem)]
+    return sorted(dates, reverse=True)
+
+
+def build_backnumber_index(base, urls):
+    dates = _list_backnumber_dates()
+    if dates:
+        items = "".join(
+            f'<li><a href="/backnumber/{d}.html">{_date_to_label(d)}版</a><span class="meta"> {d}</span></li>'
+            for d in dates
+        )
+    else:
+        items = "<li>準備中です。</li>"
+    content = (
+        '<section class="backnumber-index"><h1>バックナンバー一覧</h1>'
+        '<p>過去に公開したポイ活PRESSのダイジェストです。最新情報は<a href="/">トップページ</a>をご覧ください。</p>'
+        f'<ul class="backnumber-list">{items}</ul></section>'
+    )
+    canonical = f"{SITE}/backnumber/"
+    jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "バックナンバー一覧"}
+    html = page(base, "バックナンバー一覧", "過去に公開したポイ活PRESSのダイジェスト一覧。",
+                canonical, "website", jsonld, content)
+    write(OUT / "backnumber" / "index.html", html, urls, canonical, _today())
+
+
 def build_index(base, tpl_index, news, cards, deals, summary, urls):
     new_list, ongoing_list, ending_list = classify_campaigns(cards)
+    page_date = _page_date_label()
+    today_iso = _today()
 
-    content = tpl_index.replace("{{PAGE_DATE}}", _page_date_label())
+    content = tpl_index.replace("{{PAGE_DATE}}", page_date)
     content = content.replace("<!-- {{SUMMARY_TEXT}} -->", f'<p>{summary.get("summary_text","")}</p>')
     content = content.replace("{{SUMMARY_UPDATED}}", summary.get("updated", ""))
     content = content.replace("<!-- {{TOP_NEWS}} -->", _top_news_html(news))
@@ -190,11 +232,28 @@ def build_index(base, tpl_index, news, cards, deals, summary, urls):
     content = content.replace("<!-- {{DEALS_ITEMS}} -->", _deals_items_html(deals))
     content = content.replace("<!-- {{KAIAKU_ITEMS}} -->", _kaiaku_items_html(news))
 
-    html = page(base, "トップ", "ポイント改悪・新キャンペーン速報と高還元クレカ比較を1ページで。",
-                f"{SITE}/", "website",
-                {"@context": "https://schema.org", "@type": "WebSite", "name": "ポイ活PRESS"},
-                content)
-    write(OUT / "index.html", html, urls, f"{SITE}/", _today())
+    content_live = content.replace("<!-- {{BACKNUMBER_NOTICE}} -->", "")
+    backnumber_notice = (
+        f'<p class="backnumber-notice">このページは過去のバックナンバー（{page_date}版）です。'
+        f'最新情報は<a href="/">トップページ</a>をご覧ください。</p>'
+    )
+    content_archive = content.replace("<!-- {{BACKNUMBER_NOTICE}} -->", backnumber_notice)
+
+    jsonld = {"@context": "https://schema.org", "@type": "WebSite", "name": "ポイ活PRESS"}
+
+    html_live = page(base, "トップ", "ポイント改悪・新キャンペーン速報と高還元クレカ比較を1ページで。",
+                      f"{SITE}/", "website", jsonld, content_live)
+    write(OUT / "index.html", html_live, urls, f"{SITE}/", today_iso)
+
+    # バックナンバー保存: 同日中の再ビルドは同一ファイル（今日の日付）を上書きするだけなので
+    # 重複ファイルは発生しない。日付が変わって初めて新しいバックナンバーが1件増える
+    backnumber_canonical = f"{SITE}/backnumber/{today_iso}.html"
+    html_archive = page(base, f"{page_date}版バックナンバー",
+                         f"ポイ活PRESS {page_date}版のバックナンバー（アーカイブ）。",
+                         backnumber_canonical, "article", jsonld, content_archive)
+    write(OUT / "backnumber" / f"{today_iso}.html", html_archive, urls, backnumber_canonical, today_iso)
+
+    build_backnumber_index(base, urls)
 
 
 def build_news(base, tpl_news, news, urls):
@@ -282,10 +341,39 @@ def build_cards(base, tpl_cards, cards, urls):
     write(OUT / "cards" / "index.html", html, urls, canonical, _today())
 
 
-def build_categories(base, tpl_category, news, urls):
+def _latest_digest_html(category, news, cards, page_date, today_iso):
+    # 案A（2026-07-13確定）: 新キャンペーン／改悪情報のカテゴリページ先頭に、
+    # トップページ（最新号 x/x版）の該当セクションをそのまま転載する
+    if category == "campaign":
+        new_list, ongoing_list, ending_list = classify_campaigns(cards)
+        body = (
+            '<div class="campaign-group"><h3>新キャンペーン</h3><div class="campaign-list">'
+            f'{_campaign_group_html(new_list)}</div></div>'
+            '<div class="campaign-group"><h3>進行中キャンペーン</h3><div class="campaign-list">'
+            f'{_campaign_group_html(ongoing_list)}</div></div>'
+            '<div class="campaign-group"><h3>終了間近キャンペーン</h3><div class="campaign-list">'
+            f'{_campaign_group_html(ending_list)}</div></div>'
+        )
+    elif category == "kaiaku":
+        body = f'<ul class="kaiaku-items">{_kaiaku_items_html(news)}</ul>'
+    else:
+        return ""
+
+    return (
+        f'<section class="latest-digest"><h2>最新号（{page_date}版）の内容</h2>'
+        f'{body}'
+        f'<p class="meta">出典: <a href="/backnumber/{today_iso}.html">{page_date}版バックナンバー</a></p>'
+        '</section>'
+    )
+
+
+def build_categories(base, tpl_category, news, cards, urls):
     by_category = {}
     for n in news:
         by_category.setdefault(n.get("category", ""), []).append(n)
+
+    page_date = _page_date_label()
+    today_iso = _today()
 
     for category, label in CATEGORY_LABELS.items():
         items = sorted(by_category.get(category, []), key=lambda n: n.get("published", ""), reverse=True)
@@ -295,12 +383,34 @@ def build_categories(base, tpl_category, news, urls):
         ) or "<li>準備中です。</li>"
 
         content = render(tpl_category, {"CATEGORY_LABEL": label})
+        content = content.replace(
+            "<!-- {{LATEST_DIGEST}} -->", _latest_digest_html(category, news, cards, page_date, today_iso)
+        )
         content = content.replace("<!-- {{NEWS_ITEMS}} -->", news_items)
 
         canonical = f"{SITE}/category/{category}/"
         jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": label}
         html = page(base, label, f"{label}の最新ニュース一覧。", canonical, "website", jsonld, content)
         write(OUT / "category" / category / "index.html", html, urls, canonical, _today())
+
+
+def build_deals_page(base, deals, urls):
+    page_date = _page_date_label()
+    today_iso = _today()
+    content = (
+        '<section class="deals-page"><h1>お得商品</h1>'
+        '<p class="note">Amazon・楽天などでインフルエンサーが特に推している商品や、期間限定の割引情報を'
+        'ピックアップします。掲載時は自社のアフィリエイトリンクを使用し、該当する場合はPR表記を付けます。</p>'
+        f'<h2>最新号（{page_date}版）の内容</h2>'
+        f'<div id="deals-list">{_deals_items_html(deals)}</div>'
+        f'<p class="meta">出典: <a href="/backnumber/{today_iso}.html">{page_date}版バックナンバー</a></p>'
+        '</section>'
+    )
+    canonical = f"{SITE}/deals/"
+    jsonld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "お得商品"}
+    html = page(base, "お得商品", "Amazon・楽天などのお得な商品・キャンペーン情報一覧。",
+                canonical, "website", jsonld, content)
+    write(OUT / "deals" / "index.html", html, urls, canonical, today_iso)
 
 
 def _related_cards_html(related_slugs: list, cards_by_slug: dict) -> str:
@@ -419,7 +529,8 @@ def main():
     build_index(base, tpl_index, news, cards, deals, summary, urls)
     build_news(base, tpl_news, news, urls)
     build_cards(base, tpl_cards, cards, urls)
-    build_categories(base, tpl_category, news, urls)
+    build_categories(base, tpl_category, news, cards, urls)
+    build_deals_page(base, deals, urls)
     build_guides(base, tpl_guide, guides, cards, urls)
     build_guide_index(base, guides, urls)
     write_sitemap(urls)

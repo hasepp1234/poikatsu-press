@@ -45,3 +45,9 @@ main{max-width:960px;margin:0 auto;padding:1rem}
 .latest-digest h2{font-size:1rem;margin-top:0}
 .category-subheading{font-size:1rem;color:var(--muted);margin-top:1.5rem}
 .deals-page .note{color:var(--muted);font-size:.85rem}
+
+/* クレカ比較表・QR決済・ふるさと納税比較表の共通スタイル（2026-07-13追加） */
+.cards-compare .note{color:var(--muted);font-size:.85rem;margin-bottom:1rem}
+.cards-table{width:100%;border-collapse:collapse;font-size:.85rem}
+.cards-table th,.cards-table td{border:1px solid #eee;padding:.5rem .6rem;text-align:left;vertical-align:top}
+.cards-table th{background:#f7f7f7;white-space:nowrap}

@@ -4,16 +4,16 @@
     "name": "楽天カード",
     "issuer": "楽天カード株式会社",
     "brand": "Visa／Mastercard／JCB／American Express",
-    "campaign_points": "新規入会＆3回利用で5,000ポイント＋楽天ペイ利用で抽選3,000ポイント（最大8,000ポイント）",
-    "campaign_conditions": "2026年7月6日10:00〜7月13日9:59の新規入会期間内に申込、翌月末までに3回以上利用等が必要。内容・期間は時期により変動するため申込前に公式で要確認",
-    "campaign_start": "2026-07-06",
-    "campaign_end": "2026-07-13",
+    "campaign_points": "新規入会＆3回利用で5,000ポイント（常時開催）。JCBブランド選択の場合は追加で3,000ポイント、合計最大8,000ポイント（期間限定）",
+    "campaign_conditions": "基本の5,000ポイント（新規入会特典2,000pt＋カード利用特典3,000pt）は常時開催。JCBブランド選択時の追加3,000ptは2026年7月13日10:00〜2026年8月10日10:00の期間限定で、カード利用期限・口座振替設定など別途条件あり。内容・期間は時期により変動するため申込前に公式で要確認",
+    "campaign_start": "2026-07-13",
+    "campaign_end": "2026-08-10",
     "annual_fee": "永年無料",
     "base_return_rate": "1.0%（100円につき1ポイント）",
     "category": "credit-card",
     "affiliate_url": "",
     "official_url": "https://www.rakuten-card.co.jp/campaign/rakuten_card/corp/",
-    "updated": "2026-07-11"
+    "updated": "2026-07-13"
   },
   {
     "slug": "mitsui-sumitomo-card-nl",

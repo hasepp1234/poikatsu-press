@@ -18,6 +18,7 @@
   --new:#c8102e;
   --ongoing:#2563a8;
   --ending:#b7791f;
+  --deal:#1a7f5a;
   --radius-sm:6px;
   --radius:10px;
   --shadow-sm:0 1px 2px rgba(15,15,15,.05);
@@ -45,7 +46,7 @@ h2{
   font-size:clamp(1.15rem,3vw,1.3rem);
   margin-top:2.4rem;
   padding-bottom:.5rem;
-  border-bottom:2px solid var(--fg);
+  border-bottom:2px solid var(--accent);
   display:inline-block;
 }
 h3{font-size:1.02rem;margin-bottom:.5rem}
@@ -63,11 +64,18 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);
   z-index:10;
 }
-.brand{font-weight:800;color:var(--accent);text-decoration:none;font-size:1.25rem;letter-spacing:-.01em}
+.brand{
+  font-weight:800;color:var(--accent);text-decoration:none;font-size:1.25rem;letter-spacing:-.01em;
+  display:inline-flex;align-items:center;gap:.45rem;
+}
+.brand::before{
+  content:"";width:22px;height:22px;border-radius:6px;flex:none;
+  background:linear-gradient(135deg,var(--accent),var(--accent-dark));
+}
 .brand:hover{text-decoration:none;opacity:.85}
 nav{display:flex;flex-wrap:wrap;gap:.2rem}
 nav a{
-  padding:.45rem .6rem;border-radius:6px;
+  padding:.6rem .65rem;border-radius:6px;
   text-decoration:none;color:var(--fg);font-size:.88rem;font-weight:500;
 }
 nav a:hover{background:var(--bg-soft);text-decoration:none}
@@ -107,7 +115,7 @@ main{max-width:var(--maxw);margin:0 auto;padding:1.6rem 1.2rem 3rem}
 
 /* ===== 公式サイトへのボタン風リンク（比較表内の主要CTA） ===== */
 .btn-outline{
-  display:inline-block;padding:.4rem .85rem;border:1px solid var(--accent);
+  display:inline-block;padding:.55rem .9rem;border:1px solid var(--accent);
   border-radius:6px;color:var(--accent);font-size:.85rem;font-weight:700;
   text-decoration:none;white-space:nowrap;transition:background .15s ease,color .15s ease;
 }
@@ -148,7 +156,7 @@ main{max-width:var(--maxw);margin:0 auto;padding:1.6rem 1.2rem 3rem}
 .deals .note{color:var(--muted);font-size:.85rem}
 #deals-list{display:flex;flex-direction:column;gap:.7rem}
 .deal-item{
-  border:1px solid var(--border);border-radius:var(--radius-sm);padding:.7rem .9rem;
+  border:1px solid var(--border);border-left:4px solid var(--deal);border-radius:var(--radius-sm);padding:.7rem .9rem;
   box-shadow:var(--shadow-sm);transition:box-shadow .15s ease,transform .15s ease;
 }
 .deal-item:hover{box-shadow:var(--shadow);transform:translateY(-1px)}
@@ -171,8 +179,19 @@ main{max-width:var(--maxw);margin:0 auto;padding:1.6rem 1.2rem 3rem}
 /* ===== カテゴリページ・お得商品ページ ===== */
 .latest-digest{background:var(--bg-soft);border-radius:var(--radius);padding:1rem 1.2rem;margin:1rem 0 1.8rem;border:1px solid var(--border)}
 .latest-digest h2{font-size:1.05rem;margin-top:0;border-bottom:none;padding-bottom:0;display:block}
+.latest-digest .campaign-item{box-shadow:none;background:transparent}
+.latest-digest .campaign-item:hover{box-shadow:none;transform:none}
+.latest-digest .campaign-item:hover a{color:var(--accent)}
+.latest-digest #kaiaku-items li:last-child{border-bottom:none}
 .category-subheading{font-size:1.05rem;color:var(--fg);margin-top:2rem}
 .deals-page .note{color:var(--muted);font-size:.85rem}
+
+/* ===== 空状態（データがまだ無いセクション） ===== */
+.empty-state{
+  color:var(--muted);background:var(--bg-soft);border:1px dashed var(--border);
+  border-radius:var(--radius-sm);padding:1rem 1.1rem;font-size:.9rem;
+}
+li.empty-state{border-left:none;border-bottom:none;list-style:none;margin:.4rem 0}
 
 /* ===== 比較表（モバイル横スクロール対応） ===== */
 .cards-compare .note{color:var(--muted);font-size:.85rem;margin-bottom:1rem}

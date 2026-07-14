@@ -53,7 +53,7 @@ gtag('config', 'G-ERM7H8H978');
   <h1>クレジットカード</h1>
   
   <h2 class="category-subheading">関連ニュース一覧</h2>
-  <ul id="news-list"><li>準備中です。</li></ul>
+  <ul id="news-list"><li class="empty-state">準備中です。</li></ul>
 </section>
 
 </main>
@@ -63,5 +63,22 @@ gtag('config', 'G-ERM7H8H978');
   <p><a href="/about/">運営情報</a> ・ <a href="/contact/">お問い合わせ</a> ・ <a href="/privacy/">プライバシーポリシー</a></p>
   <small>© ポイ活PRESS</small>
 </footer>
+
+<!-- ナビの現在地ハイライト（2026-07-14追加。全ページ共通のbase.htmlはビルド時に
+     どのページかを知らないため、表示側でlocation.pathnameと突き合わせて判定する） -->
+<script>
+(function(){
+  var path = location.pathname;
+  var links = document.querySelectorAll('.site-header nav a');
+  var best = null;
+  for (var i = 0; i < links.length; i++) {
+    var href = links[i].getAttribute('href');
+    if (href && href !== '/' && path.indexOf(href) === 0) {
+      if (!best || href.length > best.getAttribute('href').length) best = links[i];
+    }
+  }
+  if (best) best.classList.add('active');
+})();
+</script>
 </body>
 </html>

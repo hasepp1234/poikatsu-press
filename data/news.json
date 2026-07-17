@@ -1,1 +1,57 @@
-[]
+[
+  {
+    "news_id": "news_2077616621632504278",
+    "title": "東京スター銀行、口座開設と円定期300万円以上で現金5,000円プレゼント",
+    "summary": "東京スター銀行は、インターネット限定「スターワン円定期預金」への合計300万円以上の新規申込みで、全員に現金5,000円をプレゼントするキャンペーンを実施中。給与・年金の振込を5万円以上設定するとさらに5,000円が上乗せされ最大10,000円となる。期間は2026年6月1日〜8月31日（給与・年金入金は9月30日まで）。",
+    "category": "campaign",
+    "tags": [
+      "銀行",
+      "口座開設",
+      "キャンペーン"
+    ],
+    "source_url": "https://www.tokyostarbank.co.jp/campaign/open_enteiki_260601/",
+    "source_type": "influencer",
+    "source_account": "chibiusachi",
+    "source_posted_at": "2026-07-16T04:49:37.000Z",
+    "published": "2026-07-17T11:31:25Z",
+    "updated": "2026-07-17T11:31:25Z",
+    "featured": false
+  },
+  {
+    "news_id": "news_2077526119935607044",
+    "title": "東京メトロ、夏のクレカ乗車還元キャンペーンを7/16から実施",
+    "summary": "東京メトロは2026年7月16日〜31日、対応するVisa・JCBのタッチ決済カードで「クレカ乗車」を利用すると特典が受けられるキャンペーンを実施。Visaは事前のWeb登録で乗車決済額の30%をキャッシュバック（期間中上限600円）。JCBは対象カードで通常の20倍のJ-POINTが付与される。",
+    "category": "credit-card",
+    "tags": [
+      "東京メトロ",
+      "クレカ乗車",
+      "Visa",
+      "JCB"
+    ],
+    "source_url": "https://www.tokyometro.jp/news/2026/224846.html",
+    "source_type": "influencer",
+    "source_account": "money_yossy",
+    "source_posted_at": "2026-07-15T22:50:00.000Z",
+    "published": "2026-07-17T11:31:27Z",
+    "updated": "2026-07-17T11:31:27Z",
+    "featured": false
+  },
+  {
+    "news_id": "news_2078040066287661264",
+    "title": "りそな銀行、投信積立の新規・増額で最大10,000ポイントの夏キャンペーン",
+    "summary": "りそな銀行は2026年7月1日〜9月30日、「りそな夏のつみたてスタート＆増額キャンペーン」を実施。9月30日までにWebでエントリーのうえ月1万円以上の積立投資信託を新規契約、または既存契約から増額し、11月30日までに一度以上約定させることなどが条件。達成金額に応じて最大10,000クラブポイントが2027年1月末頃に進呈される。",
+    "category": "campaign",
+    "tags": [
+      "りそな銀行",
+      "投資信託",
+      "つみたて"
+    ],
+    "source_url": "https://www.resonabank.co.jp/kojin/toshin/cam/2026_summer/",
+    "source_type": "influencer",
+    "source_account": "koeda_dpoint",
+    "source_posted_at": "2026-07-17T08:52:14.000Z",
+    "published": "2026-07-17T11:31:31Z",
+    "updated": "2026-07-17T11:31:31Z",
+    "featured": true
+  }
+]

@@ -540,5 +540,619 @@
     "collected_at": "2026-07-13T12:43:59Z",
     "status": "rejected",
     "note": "公式発表での裏取り前。この文面をそのまま記事化しないこと。 deals.json掲載時はsource/is_affiliate/category/urlを人手で設定（自社アフィリンクへの貼り替え含む。data/_schema.md参照）。 [2026-07-13 見送り: プライムデー限定の個人アフィリ投稿が中心で鮮度切れ・Amazonアソシエイト未登録のため今回は非掲載。次回収集（プライムデー以外の時期）に期待]"
+  },
+  {
+    "detected_id": "x_2078029712811770069",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2078029712811770069",
+    "tweet_url": "https://x.com/chibiusachi/status/2078029712811770069",
+    "text": "3000円貰える7/25のウェビナーは公式LINEから申し込みみたいです👇🏻\nhttps://t.co/cEBf7NIz7A\n\nNISAもしくはiDeCo利用の申告はこちらから、「NISA・iDeCoキャンペーン」とLINEか問い合わせから連絡👇🏻\nhttps://t.co/KsHvhyUlFR https://t.co/BmYPAogZtq",
+    "created_at": "2026-07-17T08:11:06.000Z",
+    "matched_keywords": [
+      "キャンペーン"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "個人紹介（LINE誘導）のみで公式一次ソースを確認できないため見送り。"
+  },
+  {
+    "detected_id": "x_2078017790985015646",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2078017790985015646",
+    "tweet_url": "https://x.com/chibiusachi/status/2078017790985015646",
+    "text": "povo、キャンペーンコード\n【PB6QBRCE5】を使って新規登録で3日間100GBまで利用できます！\nhttps://t.co/5Omhx7Ldej\n有効期限 : 2026年9月30日（水）\n【PR】【povo】",
+    "created_at": "2026-07-17T07:23:43.000Z",
+    "matched_keywords": [
+      "キャンペーン",
+      "キャンペーンコード"
+    ],
+    "candidate_type": [
+      "news",
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "個人配布のキャンペーンコード起点。公式の一般キャンペーンとしての裏取りが困難なため見送り。"
+  },
+  {
+    "detected_id": "x_2078017679215235446",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2078017679215235446",
+    "tweet_url": "https://x.com/chibiusachi/status/2078017679215235446",
+    "text": "スマホ回線はpovoが便利でおすすめ！\n🐰必要な時にデータをトッピング購入するだけ！基本料0円で使える！\n🐰トッピングなしでも契約可能\n 詳細はこちら👉🏻 https://t.co/4zo6QAT2h0 \nキャンペーンコード【PB6QBRCE5】で新規登録者限定で3日間100GB 利用可能！\n\n有効期限: 2026年9月30(水)【PR】【povo】 https://t.co/nyW8qTByfp",
+    "created_at": "2026-07-17T07:23:17.000Z",
+    "matched_keywords": [
+      "キャンペーン",
+      "キャンペーンコード"
+    ],
+    "candidate_type": [
+      "news",
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "上記と同一内容の重複投稿のため見送り。"
+  },
+  {
+    "detected_id": "x_2078015313321578616",
+    "source": "x",
+    "account_handle": "haiji_doctor",
+    "account_name": "ハイジ博士@ポイ活！キャッシュレス決済＆お得節約情報",
+    "tweet_id": "2078015313321578616",
+    "tweet_url": "https://x.com/haiji_doctor/status/2078015313321578616",
+    "text": "【MONEY PLUS連載】\n\nニトリ最大20％や8月開催のdポイント増量キャンペーンの注意点などまとめてます✍️\n\n⬇無料で読める最新記事こちら\nhttps://t.co/jJRpMos4jD",
+    "created_at": "2026-07-17T07:13:53.000Z",
+    "matched_keywords": [
+      "キャンペーン",
+      "増量"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "雑談・リプライでニュース性なし（記事化対象外）。"
+  },
+  {
+    "detected_id": "x_2077979680511267290",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2077979680511267290",
+    "tweet_url": "https://x.com/chibiusachi/status/2077979680511267290",
+    "text": "三菱ＵＦＪ銀行、お子様用の口座開設で最大41,000円分還元ですんごいです！！\n✅ポイントインカム経由で三菱ＵＦＪ銀行の口座開設で19500円分ポイント還元👇🏻\nhttps://t.co/hOZGPDboPF\n\n✅エントリー＆口座開設完了日の翌月末の残高が10万円以上で現金20,000円🉐👇🏻\nhttps://t.co/8bYdEGWnvN https://t.co/ufIAYDGY4y https://t.co/4dNJeKi0KW",
+    "created_at": "2026-07-17T04:52:17.000Z",
+    "matched_keywords": [
+      "ポイント還元"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "三菱UFJ銀行の口座開設特典だが、ポイントサイト経由の個人アフィリ相当のリンクのため今回は見送り。継続検討。"
+  },
+  {
+    "detected_id": "x_2077910079828004875",
+    "source": "x",
+    "account_handle": "mild7000",
+    "account_name": "マイルド／お得×投資で資産運用",
+    "tweet_id": "2077910079828004875",
+    "tweet_url": "https://x.com/mild7000/status/2077910079828004875",
+    "text": "＜楽天お買い物マラソン＞\n7月後半の告知きました🎉\n⬇事前エントリー開始\nhttps://t.co/nJkonjMDJN\n\n期間：7月19日20:00～26日01:59\n上限：7,000ポイント\n倍率：最大11倍\n\nエントリー＆クーポンまとめは別途まとめます(*´ч ` *)",
+    "created_at": "2026-07-17T00:15:43.000Z",
+    "matched_keywords": [
+      "上限",
+      "クーポン"
+    ],
+    "candidate_type": [
+      "news",
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "楽天お買い物マラソンの上限ポイント・倍率について、公式イベントページがJS描画のため今回は数値を確実に裏取りできず見送り。次回セッションでブラウザ実機確認のうえ再検討。"
+  },
+  {
+    "detected_id": "x_2077898576563224609",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077898576563224609",
+    "tweet_url": "https://x.com/money_yossy/status/2077898576563224609",
+    "text": "【7/17 朝のお得情報④-LAST】#PR\n楽天モバイル最新キャンペーンまとめ\n①②③⑥がおすすめ\n\n【SIMのみ申し込み】\n①三木谷キャンペーン最大14,000ポイント\nhttps://t.co/XMwxKAmKdD\n②紹介キャンペーン(通常)最大20,000ポイント\nhttps://t.co/5gkVD6vPhL\n\n【iPhone】 https://t.co/php7Z6S3q6 https://t.co/bh9e8iqrxF",
+    "created_at": "2026-07-16T23:30:00.000Z",
+    "matched_keywords": [
+      "新キャンペーン",
+      "キャンペーン",
+      "お得情報"
+    ],
+    "candidate_type": [
+      "news",
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "楽天モバイルの複数キャンペーンが混在し金額の一致を確認できず、個人紹介リンク起点のため見送り。"
+  },
+  {
+    "detected_id": "x_2077891026430337049",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077891026430337049",
+    "tweet_url": "https://x.com/money_yossy/status/2077891026430337049",
+    "text": "【7/17 朝のお得情報③】#PR\nAmazonお得情報\n\nお茶49円/本\nhttps://t.co/uXyfrqvIUC\n\n糖質コントロール完熟トマトのスープ50%OFF 100円/食\nhttps://t.co/i3qtjrdLol\n\nヤマモリ タイクック30%OFFクーポン189円/食(定期便157円/食)\nhttps://t.co/9trw5jqxJB\n\nAnkerワイヤレスヘッドホン安い↓↓ https://t.co/iUFmtynrGG",
+    "created_at": "2026-07-16T23:00:00.000Z",
+    "matched_keywords": [
+      "クーポン",
+      "お得情報"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "個人アフィリ投稿のAmazon商品タイムセール。Amazonアソシエイト未登録のため前回同様見送り。"
+  },
+  {
+    "detected_id": "x_2077883477198831935",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077883477198831935",
+    "tweet_url": "https://x.com/money_yossy/status/2077883477198831935",
+    "text": "【7/17 朝のお得情報②】#PR\n大戸屋初の夏福袋(～8/4)\nhttps://t.co/93y0C8b3Th\n・3,000円(税込)\n・オリジナル商品5点＋サマークーポン 3,300円分 (有効期限11/30)\n・店頭販売7/17～\n\n■デジタルギフトでさらにお得\n 500円：https://t.co/VZYv5iVQYU\n1,000円：https://t.co/2kJ4LyGYGW https://t.co/cmlL72xZqa",
+    "created_at": "2026-07-16T22:30:00.000Z",
+    "matched_keywords": [
+      "クーポン",
+      "お得情報"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "個人アフィリ投稿のAmazon商品タイムセール。Amazonアソシエイト未登録のため前回同様見送り。"
+  },
+  {
+    "detected_id": "x_2077875931033854332",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077875931033854332",
+    "tweet_url": "https://x.com/money_yossy/status/2077875931033854332",
+    "text": "【7/17 朝のお得情報①】#PR\n楽天モバイル最強感謝祭開催中！\n\n■勝ったら+1倍\nhttps://t.co/BhU7QsjHJK\n\n■ポイント利用で+1倍(～7/20 9:59)\nhttps://t.co/Ei0q3nO6iD\n\n■抽選で全額還元＆日替わり超目玉商品10:00～\nhttps://t.co/bszZk6jjDc\n・シャープ加湿空気清浄機、東芝過熱水蒸気オーブン https://t.co/qk4S2uJ4ju",
+    "created_at": "2026-07-16T22:00:01.000Z",
+    "matched_keywords": [
+      "お得情報"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "個人アフィリ投稿のAmazon商品タイムセール。Amazonアソシエイト未登録のため前回同様見送り。"
+  },
+  {
+    "detected_id": "x_2077794105619566880",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2077794105619566880",
+    "tweet_url": "https://x.com/chibiusachi/status/2077794105619566880",
+    "text": "@mahorobahouse ありがとうございます(´；ω；｀)\n暑すぎてやばかったです！\nちょっとしたオフ会みたいになってて楽しかったです笑笑",
+    "created_at": "2026-07-16T16:34:52.000Z",
+    "matched_keywords": [
+      "オフ"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "雑談・リプライ（オフ会の話）でニュース性なし（記事化対象外）。誤ってdeals反映されていたため訂正。"
+  },
+  {
+    "detected_id": "x_2077788457267839311",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2077788457267839311",
+    "tweet_url": "https://x.com/chibiusachi/status/2077788457267839311",
+    "text": "@piya00piya まさかのずっと暑かったよ！\n端末が熱くなるの改良してくれよ！笑",
+    "created_at": "2026-07-16T16:12:26.000Z",
+    "matched_keywords": [
+      "改良"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "雑談・リプライでニュース性なし（記事化対象外）。"
+  },
+  {
+    "detected_id": "x_2077779429921898516",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077779429921898516",
+    "tweet_url": "https://x.com/money_yossy/status/2077779429921898516",
+    "text": "【Amazon】#PR\n急ぎ、からだシフト 糖質コントロール 満足Soup 完熟トマトのスープ50%OFFクーポン125円/食(定期便100円/食)\nhttps://t.co/BIT3usB7SX\n購入時、必ずクーポン適用を確認くださいm(_ _)m https://t.co/7ZQs7YtKj9",
+    "created_at": "2026-07-16T15:36:34.000Z",
+    "matched_keywords": [
+      "クーポン"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "個人アフィリ投稿のAmazon商品クーポン。Amazonアソシエイト未登録のため見送り。"
+  },
+  {
+    "detected_id": "x_2077775488848933090",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077775488848933090",
+    "tweet_url": "https://x.com/money_yossy/status/2077775488848933090",
+    "text": "【Amazon】#PR\n安い！\nヤマモリ タイクック30%OFFクーポン189円/食(定期便157円/食)\nhttps://t.co/9trw5jqxJB\n購入時、必ずクーポン適用を確認くださいm(_ _)m https://t.co/165ywCRZy1",
+    "created_at": "2026-07-16T15:20:54.000Z",
+    "matched_keywords": [
+      "クーポン"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "個人アフィリ投稿のAmazon商品クーポン。Amazonアソシエイト未登録のため見送り。"
+  },
+  {
+    "detected_id": "x_2077749897839985122",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077749897839985122",
+    "tweet_url": "https://x.com/money_yossy/status/2077749897839985122",
+    "text": "【Amazon】#PR\n定期便5%＆15%OFFクーポンでお茶が安いです！\n\nアサヒ飲料 食事の脂にこの1本600ml 56円/本\nhttps://t.co/Fe4t6XXmkD\n\nアサヒ 緑茶630ml 57円/本\nhttps://t.co/JlcoAH5ykc\n\nさらに「BB26Q3NC」対象の方は10%OFF追加で\n・食事の脂にこの1本→49本\n・緑茶50円/本 https://t.co/0hyR9mNeU8",
+    "created_at": "2026-07-16T13:39:13.000Z",
+    "matched_keywords": [
+      "クーポン"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "個人アフィリ投稿のAmazon商品クーポン。Amazonアソシエイト未登録のため見送り。"
+  },
+  {
+    "detected_id": "x_2077749845503455742",
+    "source": "x",
+    "account_handle": "tanaka100p",
+    "account_name": "ash@",
+    "tweet_id": "2077749845503455742",
+    "tweet_url": "https://x.com/tanaka100p/status/2077749845503455742",
+    "text": "エアウォレット\nホットペッパーグルメで予約＆エアウォレットVisaで支払いで2人に1人100%キャッシュバック(上限2000)\n\n東京エリアの店舗限定です。\nhttps://t.co/werOpMUYqW\nエアウォレットの登録は引用から↓ https://t.co/jAfiNmabZ6 https://t.co/67WksTaYgZ",
+    "created_at": "2026-07-16T13:39:00.000Z",
+    "matched_keywords": [
+      "上限"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "楽天モバイルキャンペーンまとめ動画の告知のみで、具体的な特典内容の一次ソース確認は別投稿(idx6/18)と重複。"
+  },
+  {
+    "detected_id": "x_2077748115294322892",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2077748115294322892",
+    "tweet_url": "https://x.com/chibiusachi/status/2077748115294322892",
+    "text": "@koeda_2nd なんかオフ会みたいな感じでした笑笑",
+    "created_at": "2026-07-16T13:32:08.000Z",
+    "matched_keywords": [
+      "オフ"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "雑談・リプライでニュース性なし（記事化対象外）。"
+  },
+  {
+    "detected_id": "x_2077713634361540943",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077713634361540943",
+    "tweet_url": "https://x.com/money_yossy/status/2077713634361540943",
+    "text": "■解説動画\nhttps://t.co/9PB8IN4BHJ\n\n■楽天モバイル最新キャンペーン一覧\nhttps://t.co/LfALyYGIUf\n※契約前に必ず確認してください\n\n■楽天リンク設定方法\nhttps://t.co/1gGyeIMYOM\n・10秒以上の通話、忘れずに\n\n■楽天モバイル問い合わせ窓口\nhttps://t.co/I0sb0jgJZN https://t.co/yLOOQlz6zx",
+    "created_at": "2026-07-16T11:15:07.000Z",
+    "matched_keywords": [
+      "新キャンペーン",
+      "キャンペーン"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "楽天モバイルの複数キャンペーンが混在し金額の一致を確認できず、個人紹介リンク起点のため見送り。"
+  },
+  {
+    "detected_id": "x_2077713629911388457",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077713629911388457",
+    "tweet_url": "https://x.com/money_yossy/status/2077713629911388457",
+    "text": "楽天モバイル7月9大キャンペーン\n①三木谷最大14,000P\n②紹介最大20,000P\n③iPhone17e(256GB)1円/月他レンタル\n④iPhone16e最大40,000円相当\n⑤中古iPhone最大22,000円引\n⑥おサイフ搭載Android一括1円\n⑦Phone(3a)他一括22,000円引\n⑧Galaxy S26シリーズ最大23,000P\n⑨WiFi https://t.co/uyQaDswaOL",
+    "created_at": "2026-07-16T11:15:06.000Z",
+    "matched_keywords": [
+      "キャンペーン"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "上記(2077713634361540943)と同一テーマの重複投稿のため見送り。"
+  },
+  {
+    "detected_id": "x_2077639079328657524",
+    "source": "x",
+    "account_handle": "tanaka100p",
+    "account_name": "ash@",
+    "tweet_id": "2077639079328657524",
+    "tweet_url": "https://x.com/tanaka100p/status/2077639079328657524",
+    "text": "@H_Y_point @mozu_by 対象です！この特典に変わってから1回問い合わせました！",
+    "created_at": "2026-07-16T06:18:51.000Z",
+    "matched_keywords": [
+      "特典"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "エアウォレット×ホットペッパーグルメの「2人に1人100%還元・上限2000円・東京限定」に一致する公式ページを特定できず見送り。"
+  },
+  {
+    "detected_id": "x_2077626824734204173",
+    "source": "x",
+    "account_handle": "tanaka100p",
+    "account_name": "ash@",
+    "tweet_id": "2077626824734204173",
+    "tweet_url": "https://x.com/tanaka100p/status/2077626824734204173",
+    "text": "ライフカードの高還元本日終了です(*･ω･)*_ _) https://t.co/gajW5ZmDFI",
+    "created_at": "2026-07-16T05:30:10.000Z",
+    "matched_keywords": [
+      "終了"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "ライフカードの高還元は投稿時点(前日)で終了予告のため、本日時点で鮮度切れ。"
+  },
+  {
+    "detected_id": "x_2077616621632504278",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2077616621632504278",
+    "tweet_url": "https://x.com/chibiusachi/status/2077616621632504278",
+    "text": "東京スター銀行の新規口座開設キャンペーンが開始！\n口座開設＋円定期（300万円以上）で\n→ 全員に現金5,000円プレゼント\nさらに、給与振込5万円以上を設定すると\n→ プレゼントが2倍の10,000円にアップ\n■期間\n2026年6月1日〜8月31日\n（給与・年金の入金は9月30日まで）PR\nhttps://t.co/etacrVq4Uh\n. https://t.co/A6qqglNn87",
+    "created_at": "2026-07-16T04:49:37.000Z",
+    "matched_keywords": [
+      "キャンペーン"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "published",
+    "note": "公式サイトで確認。期間2026-06-01~08-31。スターワン円定期預金300万円以上申込で全員5,000円、給与振込5万円以上で追加5,000円（合計最大10,000円）。投稿内容と一致。",
+    "official_source_url": "https://www.tokyostarbank.co.jp/campaign/open_enteiki_260601/"
+  },
+  {
+    "detected_id": "x_2077528642394132906",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077528642394132906",
+    "tweet_url": "https://x.com/money_yossy/status/2077528642394132906",
+    "text": "【7/16 朝のお得情報⑤】\nパンパース楽天ポイント最大40％還元(～8/31)\nhttps://t.co/k8WBIBeRgf\n①楽天ポイントカード（アプリ含む）を提示\n②楽天ペイのコード・QR払い\n③公式オンラインストアにて楽天ペイ（オンライン）\n※①・②の対象店舗が異なるので要確認\n※ウエル活併用可\n\nその他まとめ↓↓ https://t.co/WUei9WQjH1 https://t.co/9pn2dc9Smb",
+    "created_at": "2026-07-15T23:00:01.000Z",
+    "matched_keywords": [
+      "お得情報"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "published",
+    "note": "楽天ポイントカード公式サイトで確認。期間2026-07-16~08-31。対象商品最大40%還元(上限1,000pt)、おやすみパンツ等は+10%(上限400pt)。deals.jsonへ手動反映しstatus=published。",
+    "official_source_url": "https://pointcard.rakuten.co.jp/campaign/mtu/pg-20260716/pampers/"
+  },
+  {
+    "detected_id": "x_2077526119935607044",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077526119935607044",
+    "tweet_url": "https://x.com/money_yossy/status/2077526119935607044",
+    "text": "【7/16 朝のお得情報④】\n東京メトロ、夏のクレカ乗車 還元キャンペーン(～7/31)\nhttps://t.co/tZaeatWyf1\n・Visa\n└Visa割に事前登録\n└ 30％キャッシュバック(上限：600 円)\n・JCB\n└通常の20倍のJ-POINT(通常1倍＋ボーナス19 倍)\n└J-POINTパートナーの「クレカ乗車」登録者は、更に 20倍分付与 https://t.co/SmtMjzSP1x",
+    "created_at": "2026-07-15T22:50:00.000Z",
+    "matched_keywords": [
+      "キャンペーン",
+      "上限",
+      "お得情報"
+    ],
+    "candidate_type": [
+      "news",
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "published",
+    "note": "東京メトロ公式プレスリリース（JCB・三井住友カードの公式サイトでも同内容を確認）。期間2026-07-16~07-31。Visa: 事前登録で乗車決済額30%キャッシュバック(上限600円)。JCB: 通常の20倍のJ-POINT付与。投稿内容と一致。",
+    "official_source_url": "https://www.tokyometro.jp/news/2026/224846.html"
+  },
+  {
+    "detected_id": "x_2077523603281813828",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077523603281813828",
+    "tweet_url": "https://x.com/money_yossy/status/2077523603281813828",
+    "text": "【7/16 朝のお得情報③】\nローソン、5日間限定の無料券チャレンジ(^^)\nオリジナルペットボトル飲料無料が当たる♪\n\n1）ローソンのアカウントをフォロー\n2）以下投稿をリポスト\n3）抽選で毎日1万名様に無料券！結果は自動でお知らせ\n#ローソン\n\n当たれ🙏🙏🙏 https://t.co/Jk5YWakE0j",
+    "created_at": "2026-07-15T22:40:00.000Z",
+    "matched_keywords": [
+      "お得情報"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "published",
+    "note": "ローソン公式サイトで確認。2026-07-15(水)8:00~07-19(日)23:59、対象ポストのリポストで毎日抽選1万名にオリジナルペットボトル飲料無料券。deals.jsonへ手動反映しstatus=published。",
+    "official_source_url": "https://www.lawson.co.jp/lab/tsuushin/art/1528833_4659.html"
+  },
+  {
+    "detected_id": "x_2077521090075926587",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077521090075926587",
+    "tweet_url": "https://x.com/money_yossy/status/2077521090075926587",
+    "text": "【7/16 朝のお得情報②】\nコンビニお得情報。写真は\n・１枚目→ローソン\n・２枚目、３枚目→セブンイレブン\n・４枚目→ミニストップ\n\nローソン、ハピとく祭(～7/27)\nhttps://t.co/4e9FBwOZKo\n\nファミリーマートのお得情報はゆうや店長のポストをチェック↓↓\n\n各リンク先\nhttps://t.co/S9dKqINA63 https://t.co/BQPjLQgGdU https://t.co/f4z8Oz8MVY",
+    "created_at": "2026-07-15T22:30:01.000Z",
+    "matched_keywords": [
+      "お得情報"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "published",
+    "note": "ローソン公式サイトで確認。2026-07-14(火)開始「ハピとく祭」第1弾。deals.jsonへ手動反映しstatus=published。",
+    "official_source_url": "https://www.lawson.co.jp/lab/tsuushin/art/1529628_4659.html"
+  },
+  {
+    "detected_id": "x_2077513543642202133",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077513543642202133",
+    "tweet_url": "https://x.com/money_yossy/status/2077513543642202133",
+    "text": "【7/16 朝のお得情報①】#PR\n楽天トラベル、本日も５のつく日扱いでお得！\n\n■サマーSALE最大30%OFF&amp;5,000P当たる(～7/21 9:59)\nhttps://t.co/Q6NlL8v0i4\n\nー０のつく日ー\n■最大20%OFF\nhttps://t.co/4cckm7MUcG\n\n■高級宿最大20%OFF\nhttps://t.co/Jgr4T2901w\n\n■国内ツアー5%OFF&amp;5,000円OFF https://t.co/Kw89hQTreV",
+    "created_at": "2026-07-15T22:00:01.000Z",
+    "matched_keywords": [
+      "お得情報"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "published",
+    "note": "楽天トラベル公式サイトで確認。期間2026-06-30 10:00~07-21 9:59のサマーSALE（チェックイン日により割引率変動）に加え、期間中の投稿・エントリーで抽選2,000名に5,000ポイント。deals.jsonへ手動反映しstatus=published。",
+    "official_source_url": "https://event.travel.rakuten.co.jp/special/sales/"
+  },
+  {
+    "detected_id": "x_2077386850206097421",
+    "source": "x",
+    "account_handle": "chibiusachi",
+    "account_name": "ちびうさ@無給兎ブロガー",
+    "tweet_id": "2077386850206097421",
+    "tweet_url": "https://x.com/chibiusachi/status/2077386850206097421",
+    "text": "Yahooショッピングに謎の20%クーポン！\nhttps://t.co/LwpVvupo80\nコークオンのドリンクチケットがなぜかキッチン日用品扱いのため6枚セット1000円が800円で買えちゃう、還元入れたら実質700円くらいで買えちゃう👇🏻\nhttps://t.co/nbDBYp93TP\n\nad https://t.co/miy9qm6fH6 https://t.co/wliHbzJzII",
+    "created_at": "2026-07-15T13:36:35.000Z",
+    "matched_keywords": [
+      "クーポン"
+    ],
+    "candidate_type": [
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "Yahooショッピングのクーポンについて投稿者自身が「謎の」と真偽不明を認めており、掲載しない。"
+  },
+  {
+    "detected_id": "x_2077378080734347529",
+    "source": "x",
+    "account_handle": "money_yossy",
+    "account_name": "カネ部の部長Yossy",
+    "tweet_id": "2077378080734347529",
+    "tweet_url": "https://x.com/money_yossy/status/2077378080734347529",
+    "text": "あと２時間ほどで終了ですm(_ _)m",
+    "created_at": "2026-07-15T13:01:44.000Z",
+    "matched_keywords": [
+      "終了"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-17T11:02:48Z",
+    "status": "rejected",
+    "note": "雑談的な内容で文脈不明のため見送り（記事化対象外）。"
+  },
+  {
+    "detected_id": "x_2078040066287661264",
+    "source": "x",
+    "account_handle": "koeda_dpoint",
+    "account_name": "小枝お得情報まとめ",
+    "tweet_id": "2078040066287661264",
+    "tweet_url": "https://x.com/koeda_dpoint/status/2078040066287661264",
+    "text": "りそな銀行持ってる方は結構良さそう✍️\n26/7/1〜9/30\nりそな夏のつみたてスタート&amp;増額キャンペーン\nhttps://t.co/mXGunS9M0Q\n要エントリー\n9/30までに10万円以上投信積立設定、11/30までに一度以上約定で達成\n(好きなタイミングで売却してOK)\n27年1月の特典付与まで積立設定は減額せず継続 https://t.co/Q59NMw06Zl https://t.co/YyU8WwMF2r",
+    "created_at": "2026-07-17T08:52:14.000Z",
+    "matched_keywords": [
+      "キャンペーン",
+      "特典"
+    ],
+    "candidate_type": [
+      "news",
+      "deal"
+    ],
+    "collected_at": "2026-07-17T11:02:50Z",
+    "status": "published",
+    "note": "りそな銀行公式サイトで確認。期間2026-07-01~09-30。9/30までに月10万円以上の投信積立を新規設定（または増額）し、11/30までに一度以上約定で最大10,000クラブポイント。投稿内容と一致。",
+    "official_source_url": "https://www.resonabank.co.jp/kojin/toshin/cam/2026_summer/"
+  },
+  {
+    "detected_id": "x_2078039411703583009",
+    "source": "x",
+    "account_handle": "koeda_dpoint",
+    "account_name": "小枝お得情報まとめ",
+    "tweet_id": "2078039411703583009",
+    "tweet_url": "https://x.com/koeda_dpoint/status/2078039411703583009",
+    "text": "@tanaka100p りそなは名義変更からやらないといけないので\n労力に見合わないのでやらないかもしれません🤣",
+    "created_at": "2026-07-17T08:49:38.000Z",
+    "matched_keywords": [
+      "変更"
+    ],
+    "candidate_type": [
+      "news"
+    ],
+    "collected_at": "2026-07-17T11:02:50Z",
+    "status": "rejected",
+    "note": "名義変更に関する個人的なリプライでニュース性なし（記事化対象外）。"
   }
 ]

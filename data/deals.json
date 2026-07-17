@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "slug": "pampers-rakuten-point-202607",
+    "title": "パンパース購入で楽天ポイント最大40%還元(~8/31)",
+    "description": "対象のパンパース製品を楽天ポイントカード提示、または楽天ペイのコード・QR払い・公式オンラインストアでの楽天ペイ（オンライン）決済で購入すると、利用金額に応じて楽天ポイントが最大40%還元（進呈上限1,000ポイント）。おやすみパンツシリーズ・超吸収エアリー・おしりふきは追加で+10%還元（進呈上限400ポイント）。期間は2026年7月16日〜8月31日。",
+    "source": "rakuten",
+    "url": "https://pointcard.rakuten.co.jp/campaign/mtu/pg-20260716/pampers/",
+    "is_affiliate": false,
+    "category": "point_campaign",
+    "source_account": "money_yossy",
+    "source_posted_at": "2026-07-15T23:00:01.000Z",
+    "updated": "2026-07-17"
+  },
+  {
+    "slug": "lawson-free-drink-challenge-202607",
+    "title": "ローソン公式Xの「無料券チャレンジ」でペットボトル飲料が毎日抽選1万名に当たる(~7/19)",
+    "description": "ローソン公式Xアカウントをフォローし対象ポストをリポストすると、抽選で毎日1万名にオリジナルペットボトル飲料（600ml）の無料引換券が当たる。当落結果はリプライで自動通知される。実施期間は2026年7月15日8:00〜7月19日23:59。",
+    "source": "other",
+    "url": "https://www.lawson.co.jp/lab/tsuushin/art/1528833_4659.html",
+    "is_affiliate": false,
+    "category": "campaign",
+    "source_account": "money_yossy",
+    "source_posted_at": "2026-07-15T22:40:00.000Z",
+    "updated": "2026-07-17"
+  },
+  {
+    "slug": "lawson-hapitoku-matsuri-202607",
+    "title": "ローソン「ハピとく祭」第1弾スタート、おにぎり購入でドリンク無料券など",
+    "description": "2026年7月14日よりローソンの人気企画「ハピとく祭」第1弾を開催。対象おにぎり2個（またはおにぎりセット1個）購入ごとに対象飲料の無料券がレシートに付与されるほか（発券期間7/14〜7/27、利用期間〜8/3）、アイス各種購入で次回使えるアイス20円引券がもらえる企画などを実施。",
+    "source": "other",
+    "url": "https://www.lawson.co.jp/lab/tsuushin/art/1529628_4659.html",
+    "is_affiliate": false,
+    "category": "campaign",
+    "source_account": "money_yossy",
+    "source_posted_at": "2026-07-16T23:30:00.000Z",
+    "updated": "2026-07-17"
+  },
+  {
+    "slug": "rakuten-travel-summer-sale-202607",
+    "title": "楽天トラベル「サマーSALE」開催中、国内宿泊がクーポン併用で割引+5,000ポイント抽選(~7/21)",
+    "description": "2026年6月30日10:00〜7月21日9:59の期間、楽天トラベルで国内宿泊予約がクーポン併用で割引（チェックイン時期により割引率は変動。2026年6〜9月チェックインは最大22%、10月〜2027年5月チェックインは最大30%）。あわせて期間中の対象条件達成者から抽選2,000名に5,000ポイントが当たるキャンペーンも実施中。",
+    "source": "rakuten",
+    "url": "https://event.travel.rakuten.co.jp/special/sales/",
+    "is_affiliate": false,
+    "category": "timesale",
+    "source_account": "money_yossy",
+    "source_posted_at": "2026-07-15T22:30:01.000Z",
+    "updated": "2026-07-17"
+  }
+]
